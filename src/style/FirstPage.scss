@@ -1,0 +1,41 @@
+@import url("../style/_reset.scss");
+.person {
+  width: 90%;
+  // border: 1px solid;
+  margin: 0 auto;
+  height: 110vh;
+  .title {
+    position: absolute;
+    // font-weight: bold;
+    font-size: 4.5vh;
+    top: 5vh;
+    left: 6vw;
+  }
+
+  img {
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+    left: 30vw;
+    top: 38vh;
+  }
+  .txt {
+    display: flex;
+    height: 100%;
+    p {
+      display: inline-block;
+      width: 33.333%;
+      height: 110vh;
+      line-height: 110vh;
+      font-size: 5.5vh;
+      // border: 1px solid;
+      position: relative;
+      margin: auto;
+      z-index: 10;
+    }
+    .important {
+      font-size: 7vh;
+      font-weight: bold;
+    }
+  }
+}

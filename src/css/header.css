@@ -1,0 +1,6 @@
+@import url("../style/_reset.scss");
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

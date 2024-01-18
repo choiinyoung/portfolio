@@ -1,0 +1,13 @@
+@import url("../style/_reset.scss");
+ul {
+  position: relative;
+  display: flex;
+  width: 50%;
+  border: 1px solid;
+  justify-content: space-between;
+  top: 6vh;
+  right: -47vw;
+  // right: 50vw;
+  li {
+  }
+}
