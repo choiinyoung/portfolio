@@ -1,0 +1,44 @@
+@import url("../style/_reset.scss");
+
+.profile {
+  width: 90%;
+  height: 110vh;
+
+  border: 1px solid;
+  margin: auto;
+  .title {
+    position: absolute;
+    // font-weight: bold;
+    font-size: 4vh;
+    top: 125vh;
+    left: 5vw;
+  }
+  > div {
+    display: flex;
+    border: 1px solid red;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    top: 20vh;
+
+    margin: 0 auto;
+    .left_content {
+      border: 1px solid;
+      width: 30%;
+      img {
+        position: relative;
+        top: 10vh;
+        width: 18vw;
+      }
+      .txt {
+        position: relative;
+        bottom: -10vh;
+      }
+    }
+    .right_content {
+      border: 1px solid;
+
+      width: 70%;
+    }
+  }
+}

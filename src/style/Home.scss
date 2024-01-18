@@ -1,15 +1,15 @@
 @import url("../style/_reset.scss");
 .person {
   width: 90%;
-  // border: 1px solid;
+  border: 1px solid;
   margin: 0 auto;
   height: 110vh;
   .title {
     position: absolute;
     // font-weight: bold;
-    font-size: 4.5vh;
+    font-size: 4vh;
     top: 5vh;
-    left: 6vw;
+    left: 5vw;
   }
 
   img {

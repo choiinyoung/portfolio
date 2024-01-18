@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../style/FirstPage.scss";
+import "../style/Home.scss";
 import boxImage from "../img/box.png";
-export default function First_page() {
+
+export default function Home() {
   const texts = [
     "긍정적인",
     "책임감 있는",
@@ -15,7 +16,6 @@ export default function First_page() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
-      setText(texts[index]);
     }, 3000);
 
     // cleanup 함수
@@ -27,13 +27,12 @@ export default function First_page() {
   useEffect(() => {
     // index가 변경될 때마다 텍스트 업데이트
     setText(texts[index]);
-  }, [index, texts]);
+  }, [index]);
 
   return (
     <div className="person">
       <p className="title">Front-end & Web Developer</p>
       <img src={boxImage} alt="Box" />
-      {/* <img src="../../public/img/box.png" alt="" /> */}
       <div className="txt">
         <p>저는</p>
         <p className="important">{text}</p>
