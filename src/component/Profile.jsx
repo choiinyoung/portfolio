@@ -4,8 +4,6 @@ import "../style/Profile.scss";
 export default function Profile() {
   return (
     <div className="profile">
-      <span className="title">Profile</span>
-
       <div>
         <div className="left_content">
           <img src={mainImg} alt="사진" />
@@ -15,6 +13,7 @@ export default function Profile() {
             <p>1999. 12. 28</p>
           </div>
         </div>
+        <hr></hr>
         <div className="right_content">
           <div className="education">
             <h2>Education</h2>
@@ -34,6 +33,8 @@ export default function Profile() {
             </ul>
           </div>
           <div className="license">
+            <h2>License</h2>
+
             <ul>
               <li>
                 <p>2022.12</p>
@@ -50,6 +51,8 @@ export default function Profile() {
             </ul>
           </div>
           <div className="about">
+            <h2>About Me</h2>
+
             <p>
               기술적인 역량 뿐만 아니라, 사람과의 원활한 의사소통을 중요시하며
               <br></br>
