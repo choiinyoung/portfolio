@@ -1,13 +1,39 @@
 @import url("../style/_reset.scss");
-ul {
-  position: relative;
-  display: flex;
-  width: 50%;
-  border: 1px solid;
-  justify-content: space-between;
-  top: 6vh;
-  right: -47vw;
-  // right: 50vw;
-  li {
+.header {
+  width: 90%;
+  height: 6vw;
+  // border: 1px solid green;
+  position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+  left: 5vw;
+  line-height: 1vw;
+  background-color: #fff;
+  ul {
+    position: relative;
+    display: flex;
+    width: 50%;
+    // border: 1px solid;
+    justify-content: space-between;
+    top: 6vh;
+    right: -42vw;
+    font-size: 3vh;
+    li {
+      cursor: pointer;
+      // border: 1px solid red
+      height: 3.3vh;
+
+      &:first-of-type {
+        // 부모의 첫 번째 자식에 대한 스타일
+        border-bottom: 5px solid yellow;
+      }
+    }
+  }
+  .title {
+    position: absolute;
+    // font-weight: bold;
+    font-size: 4vh;
+    top: 5vh;
+    left: 5vw;
   }
 }

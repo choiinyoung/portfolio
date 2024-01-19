@@ -1,0 +1,120 @@
+@import "_reset.scss";
+
+.available {
+  width: 90%;
+  height: 110vh;
+  border: 1px solid;
+  margin: 0 auto;
+  .circle1 {
+    width: 14vw;
+    height: 29vh;
+    position: absolute;
+    border-radius: 45%;
+
+    animation: move1 5000ms infinite linear alternate;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+  .circle2 {
+    width: 15vw;
+    height: 32vh;
+    position: absolute;
+    border-radius: 43%;
+    animation: move2 7000ms infinite linear alternate;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+  span {
+    position: absolute;
+    z-index: 10;
+    color: #333333;
+    font-size: 4vh;
+    font-weight: 500;
+  }
+  .front {
+    transform: translate3d(0, 0, 0);
+    .wave1 {
+      background: rgba(255, 255, 0, 0.4);
+      left: 35vw;
+      top: 20vh;
+    }
+    .wave2 {
+      background: rgba(255, 255, 0, 0.3);
+      top: 18vh;
+      left: 34.2vw;
+    }
+    span {
+      top: 32vh;
+      left: 38vw;
+    }
+  }
+  .etc {
+    .wave1 {
+      background: rgba(0, 128, 0, 0.4);
+
+      top: 285vh;
+      left: 20vw;
+
+      position: absolute;
+      animation: move1 3000ms infinite linear alternate;
+    }
+    .wave2 {
+      background: rgba(0, 128, 0, 0.3);
+      position: absolute;
+      top: 284vh;
+      left: 19.5vw;
+      animation: move1 7000ms infinite linear alternate;
+    }
+    span {
+      top: 297vh;
+      left: 25.5vw;
+    }
+  }
+  .tool {
+    .wave1 {
+      background-color: rgba(0, 0, 255, 0.4);
+      position: absolute;
+      top: 285vh;
+      left: 60vw;
+      animation: move1 6000ms infinite linear alternate;
+    }
+
+    .wave2 {
+      background-color: rgba(0, 0, 255, 0.3);
+      position: absolute;
+      top: 284vh;
+      left: 59.5vw;
+      animation: move1 9000ms infinite linear alternate;
+    }
+    span {
+      top: 297vh;
+      left: 65vw;
+    }
+  }
+  @keyframes move1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes move2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    25% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}

@@ -31,7 +31,6 @@ export default function Home() {
 
   return (
     <div className="person">
-      <p className="title">Front-end & Web Developer</p>
       <img src={boxImage} alt="Box" />
       <div className="txt">
         <p>저는</p>

@@ -3,7 +3,8 @@ import "../style/header.scss";
 
 export default function Header() {
   return (
-    <div>
+    <div className="header">
+      <p className="title">Front-end & Web Developer</p>
       <ul>
         <li>Home</li>
         <li>Profile</li>
