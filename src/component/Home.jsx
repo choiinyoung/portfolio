@@ -30,7 +30,7 @@ export default function Home() {
   }, [index]);
 
   return (
-    <div className="person">
+    <div className="person home">
       <img src={boxImage} alt="Box" />
       <div className="txt">
         <p>저는</p>

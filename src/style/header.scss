@@ -23,9 +23,18 @@
       // border: 1px solid red
       height: 3.3vh;
 
-      &:first-of-type {
-        // 부모의 첫 번째 자식에 대한 스타일
-        border-bottom: 5px solid yellow;
+      // &:first-of-type {
+      //   // 부모의 첫 번째 자식에 대한 스타일
+      //   border-bottom: 5px solid yellow;
+      // }
+      a {
+        &:first-of-type {
+          border-bottom: 5px solid transparent; /* 초기에는 투명한 선으로 설정 */
+          transition: border-bottom 0.5s ease-in-out;
+        }
+        &.active {
+          border-bottom: 5px solid yellow;
+        }
       }
     }
   }
