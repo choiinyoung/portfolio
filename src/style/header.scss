@@ -2,7 +2,7 @@
 .header {
   width: 90%;
   height: 6vw;
-  border: 1px solid green;
+  // border: 1px solid green;
   position: fixed;
   z-index: 100;
   margin: 0 auto;
@@ -13,14 +13,14 @@
     position: relative;
     display: flex;
     width: 50%;
-    border: 1px solid;
+    // border: 1px solid;
     justify-content: space-between;
     top: 6vh;
     right: -44vw;
     font-size: 3vh;
     li {
       cursor: pointer;
-      border: 1px solid red;
+      // border: 1px solid red;
       height: 3.3vh;
 
       // &:first-of-type {
