@@ -45,8 +45,30 @@ export default function Header() {
               Available
             </Link>
           </li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li>
+            <Link
+              activeClass="active"
+              to="portfolio1"
+              spy={true}
+              smooth={true}
+              offset={48}
+              duration={1000}
+            >
+              Portfolio#1
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="portfolio2"
+              spy={true}
+              smooth={true}
+              offset={48}
+              duration={1000}
+            >
+              Portfolio#2
+            </Link>
+          </li>
         </ul>
       </div>
     </>
