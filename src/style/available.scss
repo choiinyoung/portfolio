@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 // font-family: 'Orbitron', sans-serif;
 @font-face {
-  font-family: "DNFBitBitv2";
-  font-style: normal;
+  font-family: "intelone-mono-font-family-regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2")
+    format("woff2");
   font-weight: 400;
-  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
-    format("opentype");
+  font-style: normal;
 }
 
 .available {
@@ -14,7 +14,7 @@
   height: 110vh;
   border: 1px solid black;
   margin: 0 auto;
-  // overflow: hidden;
+  overflow: hidden;
   position: relative;
   .pie-chart {
     position: absolute;
@@ -38,6 +38,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     margin: 0 auto;
     top: 21vh;
+
     .top {
       width: 100%;
       height: 11vh;
@@ -62,7 +63,7 @@
           line-height: 10vh;
           // transition: all 0.5s ease-in;
           font-size: 2.5vh;
-          font-family: "DNFBitBitv2";
+          font-family: "intelone-mono-font-family-regular";
 
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
             0 1px 2px rgba(0, 0, 0, 0.24);
@@ -133,6 +134,21 @@
           font-weight: 400;
         }
       }
+    }
+  }
+  ul li {
+    p {
+      line-height: 4.5vh;
+      position: relative;
+      font-size: 2vh;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: -11%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      font-family: "intelone-mono-font-family-regular";
+      text-align: center;
+      color: white;
+      transition: all 0.5s ease-in;
+      opacity: 0;
     }
   }
 }

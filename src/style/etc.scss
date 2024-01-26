@@ -1,21 +1,56 @@
 @import url(../style/_reset.scss);
+@font-face {
+  font-family: "intelone-mono-font-family-regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 .etc_img {
   position: relative;
   margin: 0 auto;
-  width: 50vw;
-  height: 23vh;
+  width: 70vw;
+  height: 69vh;
   // border: 1px solid;
-  top: -30vh;
   ul {
-    width: 100%;
-    height: 100%;
-    // border: aliceblue;
+    width: 80%;
+    height: 31%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    /* top: 3vh; */
+    // border: 1px solid;
+    margin: 0 auto;
+    top: 20vh;
     li {
       // border: 1px solid red;
       width: 10vw;
+      font-family: "intelone-mono-font-family-regular";
+      cursor: pointer;
+
+      &:hover p {
+        opacity: 1;
+      }
+
+      .txt1 {
+        width: 17vw;
+        left: -4vw;
+        top: 3vh;
+      }
+      .txt2 {
+        width: 14vw;
+        top: 3vh;
+        left: -2.5vw;
+      }
+      .txt3 {
+        width: 17.5vw;
+        left: -3.5vw;
+        top: 1.5vh;
+      }
+      .txt4 {
+        top: 6vh;
+      }
     }
   }
 }

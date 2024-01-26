@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/available.scss";
 import Front from "./Availavle/Front";
 import Etc from "./Availavle/Etc";
@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faSquare as farFaSquare } from "@fortawesome/free-regular-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Available() {
   const [selectedOption, setSelectedOption] = useState("Front");
@@ -27,9 +29,17 @@ export default function Available() {
     console.log("Selected Option:", option);
     setSelectedOption(option);
   };
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div className="available">
-      <div className="bg">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="linear"
+        className="bg"
+      >
         <div className="top">
           <div className="circle">
             <label>
@@ -74,8 +84,8 @@ export default function Available() {
             </div>
           </div>
         </div>
+        {renderSelectedComponent()}
       </div>
-      {renderSelectedComponent()}
     </div>
   );
 }
