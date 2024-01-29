@@ -51,7 +51,7 @@ export default function Header() {
               to="portfolio1"
               spy={true}
               smooth={true}
-              offset={48}
+              offset={50}
               duration={1000}
             >
               Portfolio#1

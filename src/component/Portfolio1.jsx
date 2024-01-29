@@ -1,7 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../style/Portfolio1.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Portfolio1() {
   const carouselRef = useRef(null);
@@ -27,24 +25,111 @@ export default function Portfolio1() {
 
   return (
     <div className="portfolio1">
-      <div className="all">
-        <div className="scene">
-          <div ref={carouselRef} className="carousel">
-            <div className="carousel__cell">1</div>
-            <div className="carousel__cell">2</div>
-            <div className="carousel__cell">3</div>
-            <div className="carousel__cell">4</div>
-            <div className="carousel__cell">5</div>
-            <div className="carousel__cell">6</div>
-          </div>
-        </div>
+      <div id="wrap">
+        <section id="circle" ref={carouselRef}>
+          <article class="face1">
+            <div class="inner">
+              <div className="txt">
+                <h2>Play List</h2>
+                <div className="stack">
+                  <p>Stack</p>
+                  <ul>
+                    <li>html,css,js</li>
+                    <li>scss</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="vid">비디오</div>
+            </div>
+          </article>
+          <article class="face2">
+            <div class="inner">
+              <div className="txt">
+                <h2>
+                  HomePage
+                  <br />
+                  Renewal
+                </h2>
+                <div className="stack">
+                  <p>Stack</p>
+                  <ul>
+                    <li>html,css,js</li>
+                    <li>scss</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="vid">비디오</div>
+            </div>
+          </article>
+          <article class="face3">
+            <div class="inner">
+              <div className="txt">
+                <h2>
+                  Musinsa
+                  <br />
+                  Renewal
+                </h2>
+                <div className="stack">
+                  <p>Stack</p>
+                  <ul>
+                    <li>html,css,js</li>
+                    <li>scss</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="vid">비디오</div>
+            </div>
+          </article>
+          <article class="face4">
+            <div class="inner">
+              <div className="txt">
+                <h2>Sharing</h2>
+                <div className="stack">
+                  <p>Stack</p>
+                  <ul>
+                    <li>html,css,js</li>
+                    <li>scss</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="vid">비디오</div>
+            </div>
+          </article>
+          <article class="face5">
+            <div class="inner">
+              <div className="txt">
+                <h2>Re:Used</h2>
+                <div className="stack">
+                  <p>Stack</p>
+                  <ul>
+                    <li>html,css,js</li>
+                    <li>scss</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="vid">비디오</div>
+            </div>
+          </article>
+          <article class="face6">
+            <div class="inner">
+              <div className="txt">
+                <h2>Portfolio</h2>
+                <div className="stack">
+                  <p>Stack</p>
+                  <ul>
+                    <li>html,css,js</li>
+                    <li>scss</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="vid">비디오</div>
+            </div>
+          </article>
+        </section>
+
         <div className="btn">
-          <div className="btn_icon">
-            <FontAwesomeIcon icon={faAngleLeft} onClick={handlePrevClick} />
-          </div>
-          <div className="btn_icon" onClick={handleNextClick}>
-            <FontAwesomeIcon icon={faAngleRight} />
-          </div>
+          <div className="btn_left" onClick={handlePrevClick}></div>
+          <div className="btn_right" onClick={handleNextClick}></div>
         </div>
       </div>
     </div>
