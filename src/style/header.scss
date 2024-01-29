@@ -17,11 +17,12 @@
     justify-content: space-between;
     top: 6vh;
     right: -44vw;
-    font-size: 3vh;
+    font-size: 2.3vh;
     li {
       cursor: pointer;
       // border: 1px solid red;
       height: 3.3vh;
+      color: gray;
 
       // &:first-of-type {
       //   // 부모의 첫 번째 자식에 대한 스타일
@@ -34,6 +35,8 @@
         }
         &.active {
           border-bottom: 5px solid yellow;
+          color: black;
+          font-weight: 600;
         }
       }
     }
@@ -41,7 +44,7 @@
   .title {
     position: absolute;
     // font-weight: bold;
-    font-size: 4vh;
+    font-size: 3.6vh;
     top: 5vh;
     // left: 5vw;
   }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../style/available.scss";
 import Front from "./Availavle/Front";
 import Etc from "./Availavle/Etc";
@@ -12,7 +12,11 @@ import "aos/dist/aos.css";
 
 export default function Available() {
   const [selectedOption, setSelectedOption] = useState("Front");
-
+  const labelsRef = {
+    Front: useRef(null),
+    Etc: useRef(null),
+    Tool: useRef(null),
+  };
   const renderSelectedComponent = () => {
     switch (selectedOption) {
       case "Front":
@@ -28,6 +32,12 @@ export default function Available() {
   const handleOptionChange = (option) => {
     console.log("Selected Option:", option);
     setSelectedOption(option);
+
+    Object.values(labelsRef).forEach((labelRef) => {
+      labelRef.current.classList.remove("point");
+    });
+
+    labelsRef[option].current.classList.add("point");
   };
   useEffect(() => {
     AOS.init();
@@ -42,7 +52,10 @@ export default function Available() {
       >
         <div className="top">
           <div className="circle">
-            <label>
+            <label
+              ref={labelsRef.Front}
+              className={selectedOption === "Front" ? "point" : ""}
+            >
               <input
                 type="radio"
                 name="option"
@@ -52,7 +65,10 @@ export default function Available() {
               <span>Front</span>
             </label>
 
-            <label>
+            <label
+              ref={labelsRef.Etc}
+              className={selectedOption === "Etc" ? "point" : ""}
+            >
               <input
                 type="radio"
                 name="option"
@@ -62,7 +78,10 @@ export default function Available() {
               <span>Etc</span>
             </label>
 
-            <label>
+            <label
+              ref={labelsRef.Tool}
+              className={selectedOption === "Tool" ? "point" : ""}
+            >
               <input
                 type="radio"
                 name="option"

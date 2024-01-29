@@ -5,4 +5,48 @@
   height: 110vh;
   border: 1px solid black;
   margin: 0 auto;
+  position: relative;
+
+  #wrap {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    border: 1px solid red;
+    margin: 0 auto;
+    top: 22%;
+
+    .menu {
+      position: relative;
+      display: flex;
+      width: 44vw;
+      height: 6vh;
+      border: 1px solid red;
+      margin: 0 auto;
+      justify-content: space-between;
+      font-size: 2.5vh;
+      color: gray;
+      h3 {
+        cursor: pointer;
+      }
+    }
+    .point {
+      color: black;
+    }
+    input[type="radio"] {
+      display: none;
+      // &:checked + h3 {
+      //   color: black;
+      // }
+    }
+
+    ul {
+      width: 100%;
+      border: 1px solid green;
+      position: relative;
+      margin: 0 auto;
+      height: 80%;
+      top: 12%;
+      display: flex;
+    }
+  }
 }
