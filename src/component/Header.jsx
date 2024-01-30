@@ -6,8 +6,6 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <p className="title">Front-end & Web Developer</p>
-
         <ul>
           <li>
             <Link
