@@ -55,6 +55,10 @@ export default function Home() {
         <p className="important">{text}</p>
         <p>사람입니다</p>
       </div>
+      <div className="ripple1">
+        <div className="inner-ripple ripple-1"></div>
+        <div className="inner-ripple ripple-2"></div>
+      </div>
     </div>
   );
 }

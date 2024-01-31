@@ -5,9 +5,9 @@
 }
 
 .portfolio1 {
-  width: 90%;
+  // width: 90%;
   height: 110vh;
-  border: 1px solid;
+  // border: 1px solid;
   margin: 0 auto;
   overflow: hidden;
 
@@ -36,6 +36,7 @@
         top: 0;
         left: 0;
         backface-visibility: hidden;
+        cursor: pointer;
 
         .inner {
           width: 45vw;
@@ -58,7 +59,7 @@
             }
             .stack {
               position: absolute;
-              border: 1px solid;
+              // border: 1px solid;
               top: 60%;
               left: 1.5vw;
               p {
