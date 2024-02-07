@@ -13,31 +13,29 @@
     position: relative;
     display: flex;
     width: 50%;
-    // border: 1px solid;
     justify-content: space-between;
     top: 6vh;
-    right: -44vw;
+    right: -44.5vw;
     font-size: 2.3vh;
+    // border: 1px solid;
+    text-align: center;
     li {
       cursor: pointer;
-      // border: 1px solid red;
       height: 3.3vh;
-      color: #333;
+      color: gray;
+      // border: 1px solid;
+      width: 14%;
 
-      // &:first-of-type {
-      //   // 부모의 첫 번째 자식에 대한 스타일
-      //   border-bottom: 5px solid yellow;
-      // }
       a {
         &:first-of-type {
           border-bottom: 5px solid transparent; /* 초기에는 투명한 선으로 설정 */
           transition: border-bottom 0.5s ease-in-out;
         }
-        // &.active {
-        //   border-bottom: 5px solid yellow;
-        //   color: black;
-        //   font-weight: 600;
-        // }
+        &:hover {
+          // border-bottom: 0.5vh solid yellow;
+          color: black;
+          font-weight: bold;
+        }
       }
     }
   }

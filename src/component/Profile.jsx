@@ -15,10 +15,24 @@ export default function Profile() {
               <p>1999. 12. 28</p>
             </div>
           </div>
-          <hr></hr>
           <div className="right_content">
+            <div className="about">
+              <h2>About Me</h2>
+              <div className="line"></div>
+              <p>
+                기술적인 역량 뿐만 아니라, 사람과의 원활한 의사소통을 중요시하며
+                <br></br>
+                어려움 없이 협업이 가능한 팀 플레이어로 성장하고 있습니다.
+                <br></br>
+                뿐만 아니라, 트렌드에 민감하게 반응하여 끊임없이 새로운 기술과
+                동향을 습득하고
+                <br></br>
+                적용하는 데에 큰 흥미를 느끼고 있습니다.
+              </p>
+            </div>
             <div className="education">
               <h2>Education</h2>
+              <div className="line"></div>
               <ul>
                 <li>
                   <p>2023.11 ~</p>
@@ -36,7 +50,7 @@ export default function Profile() {
             </div>
             <div className="license">
               <h2>License</h2>
-
+              <div className="line"></div>
               <ul>
                 <li>
                   <p>2022.12</p>
@@ -51,20 +65,6 @@ export default function Profile() {
                   <p>GTQ 포토샵 1급</p>
                 </li>
               </ul>
-            </div>
-            <div className="about">
-              <h2>About Me</h2>
-
-              <p>
-                기술적인 역량 뿐만 아니라, 사람과의 원활한 의사소통을 중요시하며
-                <br></br>
-                어려움 없이 협업이 가능한 팀 플레이어로 성장하고 있습니다.
-                <br></br>
-                뿐만 아니라, 트렌드에 민감하게 반응하여 끊임없이 새로운 기술과
-                동향을 습득하고
-                <br></br>
-                적용하는 데에 큰 흥미를 느끼고 있습니다.
-              </p>
             </div>
           </div>
         </div>

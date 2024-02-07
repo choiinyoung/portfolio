@@ -41,6 +41,7 @@
           position: relative;
           top: 6vh;
           width: 18vw;
+          border-radius: 50%;
         }
         .txt {
           position: relative;
@@ -67,7 +68,6 @@
         // border: 1px solid blue;
         width: 45vw;
         height: 100%;
-        top: 1vh;
         left: 12vw;
         text-align: left;
         > div {
@@ -78,9 +78,8 @@
           font-weight: 500;
           width: 7vw;
           height: 4.1vh;
-          border-bottom: 4px solid yellow;
           margin-bottom: 2vh;
-          color: rgb(61, 61, 61);
+          color: #333;
         }
         li {
           display: flex;
@@ -89,6 +88,13 @@
           justify-content: space-between;
           font-size: 2.3vh;
           line-height: 5vh;
+        }
+        .line {
+          position: relative;
+          width: 90%;
+          border: 2px solid #fdd90e;
+          /* top: 15%; */
+          margin-bottom: 2%;
         }
         .license {
           h2 {
