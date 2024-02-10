@@ -8,8 +8,8 @@
   margin: 0 auto;
   left: 5vw;
   line-height: 1vw;
-  // background-color: #fff;
-  .header_top {
+  background-color: #fff;
+  ul {
     position: relative;
     display: flex;
     width: 50%;
@@ -20,58 +20,40 @@
     // border: 1px solid;
     text-align: center;
     li {
-      cursor: pointer;
+      width: 35%;
+      height: 20%;
       height: 3.3vh;
       color: gray;
-      // border: 1px solid;
-      width: 14%;
 
-      a {
-        &:first-of-type {
-          border-bottom: 5px solid transparent; /* 초기에는 투명한 선으로 설정 */
-          transition: border-bottom 0.5s ease-in-out;
-        }
+      // border: 1px solid;
+
+      .svg-inline--fa {
+        width: 30%;
+        height: 100%;
+        // border: 1px solid;
+
+        cursor: pointer;
+
         &:hover {
           // border-bottom: 0.5vh solid yellow;
           color: black;
-          font-weight: bold;
+        }
+        &:active {
+          color: black;
         }
       }
-    }
-  }
-}
-
-.left {
-  position: relative;
-  border: 1px solid;
-  width: 6%;
-  height: 50%;
-  position: fixed;
-  background: #333;
-  color: white;
-  /* margin: 0 auto; */
-  top: 30%;
-  left: 1%;
-  border-radius: 1.5rem;
-  z-index: 10;
-  .header_top {
-    list-style: none;
-    border: 1px solid red;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    li {
-      // border: 1px solid;
-      width: 35%;
-      height: 20%;
-      .svg-inline--fa {
-        width: 100%;
-        height: 100%;
-        // border: 1px solid;
-        cursor: pointer;
+      &:first-of-type {
+        // 부모의 첫 번째 자식에 대한 스타일
+        color: black;
+        a {
+          &:first-of-type {
+            border-bottom: 5px solid transparent; /* 초기에는 투명한 선으로 설정 */
+            transition: border-bottom 0.5s ease-in-out;
+          }
+          &.active {
+            // border-bottom: 5px solid yellow;
+          }
+        }
       }
     }
   }
