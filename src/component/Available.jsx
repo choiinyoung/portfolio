@@ -43,67 +43,55 @@ export default function Available() {
     AOS.init();
   });
   return (
-    <div className="available">
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-easing="linear"
-        className="bg"
-      >
-        <div className="top">
-          <div className="circle">
-            <label
-              ref={labelsRef.Front}
-              className={selectedOption === "Front" ? "point" : ""}
-            >
-              <input
-                type="radio"
-                name="option"
-                checked={selectedOption === "Front"}
-                onChange={() => handleOptionChange("Front")}
-              />
-              <span>Front</span>
-            </label>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-easing="linear"
+      className="available"
+    >
+      <div className="bg">{renderSelectedComponent()}</div>
 
-            <label
-              ref={labelsRef.Etc}
-              className={selectedOption === "Etc" ? "point" : ""}
-            >
-              <input
-                type="radio"
-                name="option"
-                checked={selectedOption === "Etc"}
-                onChange={() => handleOptionChange("Etc")}
-              />
-              <span>Etc</span>
-            </label>
+      <div className="top">
+        <div className="circle">
+          <label
+            ref={labelsRef.Front}
+            className={selectedOption === "Front" ? "point" : ""}
+          >
+            <input
+              type="radio"
+              name="option"
+              checked={selectedOption === "Front"}
+              onChange={() => handleOptionChange("Front")}
+            />
+            <span>Front</span>
+          </label>
 
-            <label
-              ref={labelsRef.Tool}
-              className={selectedOption === "Tool" ? "point" : ""}
-            >
-              <input
-                type="radio"
-                name="option"
-                checked={selectedOption === "Tool"}
-                onChange={() => handleOptionChange("Tool")}
-              />
-              <span>Tool</span>
-            </label>
-          </div>
-          <div className="btn">
-            <div className="icon1">
-              <FontAwesomeIcon icon={faMinus} />
-            </div>
-            <div className="icon2">
-              <FontAwesomeIcon icon={farFaSquare} />
-            </div>
-            <div className="icon3">
-              <FontAwesomeIcon icon={faXmark} />
-            </div>
-          </div>
+          <label
+            ref={labelsRef.Etc}
+            className={selectedOption === "Etc" ? "point" : ""}
+          >
+            <input
+              type="radio"
+              name="option"
+              checked={selectedOption === "Etc"}
+              onChange={() => handleOptionChange("Etc")}
+            />
+            <span>Etc</span>
+          </label>
+
+          <label
+            ref={labelsRef.Tool}
+            className={selectedOption === "Tool" ? "point" : ""}
+          >
+            <input
+              type="radio"
+              name="option"
+              checked={selectedOption === "Tool"}
+              onChange={() => handleOptionChange("Tool")}
+            />
+            <span>Tool</span>
+          </label>
         </div>
-        {renderSelectedComponent()}
       </div>
     </div>
   );
