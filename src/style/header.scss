@@ -8,7 +8,7 @@
   margin: 0 auto;
   left: 5vw;
   line-height: 1vw;
-  background-color: #fff;
+  // background-color: #fff;
   ul {
     position: relative;
     display: flex;
@@ -38,22 +38,27 @@
           // border-bottom: 0.5vh solid yellow;
           color: black;
         }
-        &:active {
-          color: black;
-        }
       }
-      &:first-of-type {
-        // 부모의 첫 번째 자식에 대한 스타일
+      // &:first-of-type {
+      //   // 부모의 첫 번째 자식에 대한 스타일
+      //   color: black;
+      //   a {
+      //     &:first-of-type {
+      //       border-bottom: 5px solid transparent; /* 초기에는 투명한 선으로 설정 */
+      //       transition: border-bottom 0.5s ease-in-out;
+      //     }
+      //     &.active {
+      //       // border-bottom: 5px solid yellow;
+      //     }
+      //   }
+      // }
+      h2 {
+        position: absolute;
+        left: -95%;
+        top: 10%;
+        font-weight: 400;
+        font-size: 2.3vw;
         color: black;
-        a {
-          &:first-of-type {
-            border-bottom: 5px solid transparent; /* 초기에는 투명한 선으로 설정 */
-            transition: border-bottom 0.5s ease-in-out;
-          }
-          &.active {
-            // border-bottom: 5px solid yellow;
-          }
-        }
       }
     }
   }
