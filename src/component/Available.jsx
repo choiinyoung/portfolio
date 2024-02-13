@@ -3,10 +3,6 @@ import "../style/available.scss";
 import Front from "./Availavle/Front";
 import Etc from "./Availavle/Etc";
 import Tool from "./Availavle/Tool";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus } from "@fortawesome/free-solid-svg-icons";
-import { faSquare as farFaSquare } from "@fortawesome/free-regular-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -44,7 +40,7 @@ export default function Available() {
   });
   return (
     <div
-      data-aos="fade-up"
+      data-aos="flip-left"
       data-aos-duration="1500"
       data-aos-easing="linear"
       className="available"

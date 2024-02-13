@@ -8,8 +8,8 @@
 }
 .front_img {
   position: relative;
-  width: 70vw;
-  height: 69vh;
+  width: 90%;
+  height: 100%;
   // border: 1px solid green;
   margin: 0 auto;
   ul {
@@ -18,7 +18,7 @@
     /* left: 3vw; */
     height: 90%;
     margin: 0 auto;
-    top: 2.5%;
+    top: 4%;
     display: flex;
     flex-wrap: wrap;
     /* gap: 4vw 6vh; */
@@ -28,7 +28,7 @@
       // border: 1px solid;
       width: 50%;
       height: 33.5%;
-      cursor: pointer;
+      // cursor: pointer;
       // border: 1px solid;
       .right {
         // border: 1px solid;

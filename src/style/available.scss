@@ -130,18 +130,25 @@
     }
   }
   ul li {
-    // p {
-    //   line-height: 4.5vh;
-    //   position: relative;
-    //   font-size: 2vh;
-    //   background: rgba(0, 0, 0, 0.7);
-    //   border-radius: -11%;
-    //   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    //   font-family: "intelone-mono-font-family-regular";
-    //   text-align: center;
-    //   color: white;
-    //   transition: all 0.5s ease-in;
-    //   opacity: 0;
-    // }
+    .right {
+      // border: 1px solid;
+      top: 10%;
+      left: 16%;
+      position: relative;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .txt {
+        font-size: 1vw;
+        color: black;
+        // left: 8%;
+        position: relative;
+        top: 7%;
+        width: 88%;
+        // border: 1px solid;
+        line-height: 3.5vh;
+      }
+    }
   }
 }
