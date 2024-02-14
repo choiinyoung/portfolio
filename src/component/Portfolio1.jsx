@@ -1,5 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../style/Portfolio1.scss";
+import html from "../img/html.png";
+import css from "../img/css.png";
+import js from "../img/javascript.png";
+import react from "../img/react.png";
+import scss from "../img/sass.png";
+import node from "../img/node.png";
 
 export default function Portfolio1() {
   const carouselRef = useRef(null);
@@ -30,12 +36,23 @@ export default function Portfolio1() {
           <article class="face1">
             <div class="inner">
               <div className="txt">
-                <h2>Play List</h2>
+                <h2>
+                  HomePage
+                  <br />
+                  Renewal1
+                </h2>
                 <div className="stack">
                   <p>Stack</p>
                   <ul>
-                    <li>html,css,js</li>
-                    <li>scss</li>
+                    <li>
+                      <img src={html} alt="html" />
+                    </li>
+                    <li>
+                      <img src={scss} alt="scss" />
+                    </li>
+                    <li>
+                      <img src={js} alt="js" />
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -48,13 +65,22 @@ export default function Portfolio1() {
                 <h2>
                   HomePage
                   <br />
-                  Renewal
+                  Renewal2
                 </h2>
                 <div className="stack">
                   <p>Stack</p>
                   <ul>
-                    <li>html,css,js</li>
-                    <li>scss</li>
+                    <ul>
+                      <li>
+                        <img src={html} alt="html" />
+                      </li>
+                      <li>
+                        <img src={scss} alt="scss" />
+                      </li>
+                      <li>
+                        <img src={js} alt="js" />
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
@@ -72,8 +98,17 @@ export default function Portfolio1() {
                 <div className="stack">
                   <p>Stack</p>
                   <ul>
-                    <li>html,css,js</li>
-                    <li>scss</li>
+                    <ul>
+                      <li>
+                        <img src={html} alt="html" />
+                      </li>
+                      <li>
+                        <img src={css} alt="css" />
+                      </li>
+                      <li>
+                        <img src={js} alt="js" />
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
@@ -87,8 +122,15 @@ export default function Portfolio1() {
                 <div className="stack">
                   <p>Stack</p>
                   <ul>
-                    <li>html,css,js</li>
-                    <li>scss</li>
+                    <li>
+                      <img src={react} alt="html" />
+                    </li>
+                    <li>
+                      <img src={scss} alt="scss" />
+                    </li>
+                    <li>
+                      <img src={node} alt="node" />
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -102,8 +144,17 @@ export default function Portfolio1() {
                 <div className="stack">
                   <p>Stack</p>
                   <ul>
-                    <li>html,css,js</li>
-                    <li>scss</li>
+                    <ul>
+                      <li>
+                        <img src={react} alt="html" />
+                      </li>
+                      <li>
+                        <img src={scss} alt="scss" />
+                      </li>
+                      <li>
+                        <img src={node} alt="js" />
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
@@ -117,8 +168,12 @@ export default function Portfolio1() {
                 <div className="stack">
                   <p>Stack</p>
                   <ul>
-                    <li>html,css,js</li>
-                    <li>scss</li>
+                    <li>
+                      <img src={react} alt="html" />
+                    </li>
+                    <li>
+                      <img src={scss} alt="scss" />
+                    </li>
                   </ul>
                 </div>
               </div>

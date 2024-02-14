@@ -53,7 +53,7 @@
     left: 5%;
     .circle {
       display: flex;
-      width: 24vw;
+      width: 39%;
       height: 100%;
       // border: 1px solid red;
       justify-content: space-around;
@@ -65,7 +65,7 @@
         // border: 1px solid blue;
         position: relative;
         width: 4.8vw;
-        height: 10vh;
+        height: 90%;
         cursor: pointer;
         border-radius: 50%;
         text-align: center;
@@ -73,7 +73,7 @@
         // transition: all 0.5s ease-in;
         font-size: 2.5vh;
         font-family: "intelone-mono-font-family-regular";
-
+        margin-right: 2%;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         input[type="radio"] {
           display: none;
@@ -82,7 +82,7 @@
           // }
         }
         &:nth-child(1) {
-          background: crimson;
+          background: #ed143db3;
           border-radius: 3vh 3vh 0 0;
           width: 45%;
           top: 4%;
@@ -91,13 +91,13 @@
           border-radius: 3vh 3vh 0 0;
           width: 45%;
           top: 4%;
-          background: orange;
+          background: #ffa50091;
         }
         &:nth-child(3) {
           border-radius: 3vh 3vh 0 0;
           width: 45%;
           top: 4%;
-          background: green;
+          background: #00800091;
         }
       }
       .red_cicle {

@@ -41,7 +41,7 @@ export default function Available() {
   return (
     <div
       data-aos="flip-left"
-      data-aos-duration="1500"
+      data-aos-duration="3000"
       data-aos-easing="linear"
       className="available"
     >

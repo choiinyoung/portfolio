@@ -62,9 +62,24 @@
               // border: 1px solid;
               top: 60%;
               left: 1.5vw;
+              width: 85%;
+              height: 35%;
               p {
                 font-size: 3vh;
                 margin-bottom: 3vh;
+              }
+              ul {
+                display: flex;
+                // border: 1px solid red;
+                align-items: center;
+                justify-content: space-around;
+                li {
+                  width: 33.333%;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
               }
             }
           }
