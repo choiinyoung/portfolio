@@ -6,7 +6,8 @@ import js from "../img/javascript.png";
 import react from "../img/react.png";
 import scss from "../img/sass.png";
 import node from "../img/node.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Portfolio1() {
   const carouselRef = useRef(null);
   const [cellCount] = useState(6);
@@ -58,6 +59,19 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
+            <div className="content">
+              <div className="top">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="icon">
+                  <FontAwesomeIcon icon={faXmark} />
+                </div>
+              </div>
+              <div className="window"></div>
+            </div>
           </article>
           <article class="face2">
             <div class="inner">
@@ -85,6 +99,19 @@ export default function Portfolio1() {
                 </div>
               </div>
               <div className="vid">비디오</div>
+            </div>
+            <div className="content">
+              <div className="top">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="icon">
+                  <FontAwesomeIcon icon={faXmark} />
+                </div>
+              </div>
+              <div className="window"></div>
             </div>
           </article>
           <article class="face3">
@@ -114,6 +141,19 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
+            <div className="content">
+              <div className="top">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="icon">
+                  <FontAwesomeIcon icon={faXmark} />
+                </div>
+              </div>
+              <div className="window"></div>
+            </div>
           </article>
           <article class="face4">
             <div class="inner">
@@ -135,6 +175,19 @@ export default function Portfolio1() {
                 </div>
               </div>
               <div className="vid">비디오</div>
+            </div>
+            <div className="content">
+              <div className="top">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="icon">
+                  <FontAwesomeIcon icon={faXmark} />
+                </div>
+              </div>
+              <div className="window"></div>
             </div>
           </article>
           <article class="face5">
@@ -160,6 +213,19 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
+            <div className="content">
+              <div className="top">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="icon">
+                  <FontAwesomeIcon icon={faXmark} />
+                </div>
+              </div>
+              <div className="window"></div>
+            </div>
           </article>
           <article class="face6">
             <div class="inner">
@@ -178,6 +244,19 @@ export default function Portfolio1() {
                 </div>
               </div>
               <div className="vid">비디오</div>
+            </div>
+            <div className="content">
+              <div className="top">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="icon">
+                  <FontAwesomeIcon icon={faXmark} />
+                </div>
+              </div>
+              <div className="window"></div>
             </div>
           </article>
         </section>

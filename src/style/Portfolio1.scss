@@ -10,7 +10,9 @@
   // border: 1px solid;
   margin: 0 auto;
   overflow: hidden;
-
+  .on {
+    opacity: 0;
+  }
   #wrap {
     position: relative;
     width: 100%;
@@ -21,9 +23,9 @@
 
     #circle {
       width: 50%;
-      height: 38%;
+      height: 80%;
       position: relative;
-      top: 18%;
+      top: 12%;
       margin: 0 auto;
       transform-style: preserve-3d;
       transition: all 0.5s ease;
@@ -39,8 +41,8 @@
         cursor: pointer;
 
         .inner {
-          width: 45vw;
-          height: 60vh;
+          width: 100%;
+          height: 100%;
           // background-color: rgba(0, 0, 0, 0.5);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
             0 3px 6px rgba(0, 0, 0, 0.23);
@@ -93,6 +95,62 @@
             top: 7%;
           }
         }
+        .content {
+          position: relative;
+          width: 110%;
+          height: 120%;
+          /* border: 1px solid; */
+          /* margin: 0 auto; */
+          top: -110%;
+          left: -5%;
+          background: white;
+
+          border-radius: 2rem;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
+          .top {
+            width: 100%;
+            height: 12%;
+            /* border: 1px solid; */
+            border-radius: 2rem 2rem 0 0;
+            background: lightgray;
+            ul {
+              width: 18%;
+              // border: 1px solid;
+              height: 45%;
+              top: 30%;
+              position: relative;
+              left: 3%;
+              display: flex;
+              justify-content: space-around;
+              li {
+                width: 21%;
+                border: 1px solid darkred;
+                background-color: red;
+                border-radius: 50%;
+                &:nth-child(2) {
+                  border: 1px solid darkorange;
+                  background-color: orange;
+                }
+                &:nth-child(3) {
+                  border: 1px solid darkgreen;
+                  background-color: green;
+                }
+              }
+            }
+            .icon {
+              width: 5%;
+              // border: 1px solid;
+              height: 60%;
+              position: relative;
+              left: 92%;
+              top: -25%;
+              .svg-inline--fa {
+                height: 3em;
+              }
+            }
+          }
+        }
       }
       .face1 {
         transform: rotateY(0deg) translateZ(-764px);
@@ -122,12 +180,11 @@
     .btn {
       width: 100%;
       position: absolute;
-      top: 41vh;
+      top: 50%;
       z-index: 10;
-
       .btn_right::after {
         position: absolute;
-        left: 85vw;
+        right: 10%;
         top: 2vh;
         content: "";
         cursor: pointer;
@@ -139,7 +196,7 @@
       }
       .btn_left::after {
         position: absolute;
-        left: 1vw;
+        left: 10%;
         top: 2vh;
         content: "";
         cursor: pointer;

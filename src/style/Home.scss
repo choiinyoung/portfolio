@@ -1,4 +1,5 @@
 @import url("../style/_reset.scss");
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 @font-face {
   font-family: "GangwonEduHyeonokT_OTFMediumA";
@@ -21,6 +22,7 @@
 // $face-shadow: #fd9744;
 // $main-width: 12vw;
 // $main-height: 24vh;
+$bg: #e6e2df;
 
 * {
   box-sizing: border-box;
@@ -29,85 +31,111 @@
     box-sizing: border-box;
   }
 }
-.bg-video {
-  position: absolute;
+.all {
+  // border: 1px solid orange;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
-.home {
-  width: 90%;
-  // border: 1px solid;
-  margin: 0 auto;
-  height: 110vh;
-  position: relative;
-
-  p {
+  .bg-video {
     position: absolute;
-
-    &:nth-child(1) {
-      top: 25%;
-      left: 12%;
-      font-size: 5.5vw;
-    }
-    &:nth-child(2) {
-      top: 45%;
-      font-size: 7vw;
-      left: 50%;
-    }
-    .line1 {
-      position: absolute;
-      border: 0.8vw solid #ffff00ab;
-      top: 81%;
-      // width: 100%;
-      left: 0%;
-      z-index: -1;
-      animation: line 1s ease-in forwards;
-      opacity: 0;
-    }
-    .line2 {
-      position: absolute;
-      border: 0.8vw solid #ffff00ab;
-      top: 81%;
-      left: 0%;
-      z-index: -1;
-      animation: line 1s ease-in forwards;
-      animation-delay: 1s; /* line2 애니메이션에 대한 딜레이 설정 */
-      opacity: 0;
-    }
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    overflow: hidden;
   }
+  .home {
+    width: 100%;
+    // border: 1px solid;
+    margin: 0 auto;
+    height: 110vh;
+    position: relative;
+    // background: black;
+    overflow: hidden;
 
-  @keyframes line {
-    0% {
-      opacity: 1;
-      width: 1%;
-    }
-
-    100% {
-      opacity: 1;
+    .wrapper {
       width: 100%;
+      // font-family: "Source Code Pro", monospace;
+      margin: 0 auto;
+      height: 100%;
+
+      h1 {
+        text-transform: uppercase;
+        transform: translate(-50%, -50%) skew(10deg) rotate(-10deg);
+        font-size: 10vw;
+        top: 35%;
+        left: 47%;
+        margin: 0;
+        position: absolute;
+        text-rendering: optimizeLegibility;
+        font-weight: 900;
+        color: rgba(#ff9eb1, 0.5);
+        text-shadow: 1px 4px 6px $bg, 0 0 0 #66303a, 1px 4px 6px $bg;
+        white-space: nowrap;
+
+        &:before {
+          content: attr(data-heading);
+          position: absolute;
+          left: -0.7%;
+          top: -4.8%;
+          overflow: hidden;
+          width: 100%;
+          height: 50%;
+          color: #fbf7f4;
+          transform: translate(1.6vw, 0) skew(-13deg) scale(1, 1.2);
+          z-index: 2;
+          text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        &:after {
+          content: attr(data-heading);
+          position: absolute;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          color: #d3cfcc;
+          transform: translate(0vw, 0) skew(13deg) scale(1, 0.8);
+          clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+          text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.3);
+        }
+      }
+      .txt2 {
+        top: 60%;
+        left: 67%;
+        &:before {
+          left: -0.9%;
+        }
+      }
     }
   }
-  // #container {
-  //   @include center;
-  //   width: 12vw;
-  //   height: 23vh;
-  //   top: 47%;
-  //   position: relative;
-  //   left: 82%;
-  // }
-
-  // @keyframes eyeBlink {
-  //   0%,
-  //   30%,
-  //   36%,
-  //   100% {
-  //     transform: scale(1);
-  //   }
-  //   32%,
-  //   34% {
-  //     transform: scale(1, 0);
-  //   }
-  // }
 }
+// #container {
+//   @include center;
+//   width: 12vw;
+//   height: 23vh;
+//   top: 47%;
+//   position: relative;
+//   left: 82%;
+// }
+
+// @keyframes eyeBlink {
+//   0%,
+//   30%,
+//   36%,
+//   100% {
+//     transform: scale(1);
+//   }
+//   32%,
+//   34% {
+//     transform: scale(1, 0);
+//   }
+// }
+// }
+
+// body {
+//   background: linear-gradient(45deg, $bg 80%, #c2c1bd 100%);
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }

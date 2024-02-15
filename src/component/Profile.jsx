@@ -4,18 +4,21 @@ import "../style/Profile.scss";
 
 export default function Profile() {
   return (
-    <div className="all">
-      <div className="profile">
+    <div className="profile">
+      <div className="all">
+        <div className="title">Portfolio</div>
         <div>
-          <div className="left_content">
-            <img src={mainImg} alt="사진" />
+          <div className="main">
+            <div className="img">
+              <img src={mainImg} alt="사진" />
+            </div>
             <div className="txt">
               <p>최인영</p>
-              <p>Choi In Young</p>
+              {/* <p>Choi In Young</p> */}
               <p>1999. 12. 28</p>
             </div>
           </div>
-          <div className="right_content">
+          <div className="content">
             <div className="about">
               <h2>About Me</h2>
               <div className="line"></div>
