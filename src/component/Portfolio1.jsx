@@ -10,6 +10,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Portfolio1() {
   const carouselRef = useRef(null);
+  const conentRef = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
+
+  const btnRef = useRef(null);
   const [cellCount] = useState(6);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -22,6 +32,19 @@ export default function Portfolio1() {
     carouselRef.current.style.transform = `translateZ(-700px) rotateY(${angle}deg)`;
   };
 
+  const clickMain = () => {
+    conentRef[selectedIndex].current.classList.remove("off");
+    conentRef[selectedIndex].current.classList.add("on");
+    btnRef.current.classList.add("off");
+  };
+
+  const clickClose = () => {
+    conentRef[selectedIndex].current.classList.remove("on");
+    conentRef[selectedIndex].current.classList.add("off");
+
+    btnRef.current.classList.remove("off");
+    btnRef.current.classList.add("on");
+  };
   const handlePrevClick = () => {
     setSelectedIndex((prevIndex) => prevIndex - 1);
   };
@@ -35,7 +58,7 @@ export default function Portfolio1() {
       <div id="wrap">
         <section id="circle" ref={carouselRef}>
           <article class="face1">
-            <div class="inner">
+            <div class="inner" onClick={clickMain}>
               <div className="txt">
                 <h2>
                   HomePage
@@ -59,14 +82,14 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
-            <div className="content">
+            <div className="content off" ref={conentRef[0]}>
               <div className="top">
                 <ul>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
-                <div className="icon">
+                <div className="icon" onClick={clickClose}>
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
@@ -74,7 +97,7 @@ export default function Portfolio1() {
             </div>
           </article>
           <article class="face2">
-            <div class="inner">
+            <div class="inner" onClick={clickMain}>
               <div className="txt">
                 <h2>
                   HomePage
@@ -100,14 +123,14 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
-            <div className="content">
+            <div className="content off" ref={conentRef[1]}>
               <div className="top">
                 <ul>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
-                <div className="icon">
+                <div className="icon" onClick={clickClose}>
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
@@ -115,7 +138,7 @@ export default function Portfolio1() {
             </div>
           </article>
           <article class="face3">
-            <div class="inner">
+            <div class="inner" onClick={clickMain}>
               <div className="txt">
                 <h2>
                   Musinsa
@@ -141,14 +164,14 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
-            <div className="content">
+            <div className="content off" ref={conentRef[2]}>
               <div className="top">
                 <ul>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
-                <div className="icon">
+                <div className="icon" onClick={clickClose}>
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
@@ -156,7 +179,7 @@ export default function Portfolio1() {
             </div>
           </article>
           <article class="face4">
-            <div class="inner">
+            <div class="inner" onClick={clickMain}>
               <div className="txt">
                 <h2>Sharing</h2>
                 <div className="stack">
@@ -176,14 +199,14 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
-            <div className="content">
+            <div className="content off" ref={conentRef[3]}>
               <div className="top">
                 <ul>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
-                <div className="icon">
+                <div className="icon " onClick={clickClose}>
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
@@ -191,7 +214,7 @@ export default function Portfolio1() {
             </div>
           </article>
           <article class="face5">
-            <div class="inner">
+            <div class="inner" onClick={clickMain}>
               <div className="txt">
                 <h2>Re:Used</h2>
                 <div className="stack">
@@ -213,14 +236,14 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
-            <div className="content">
+            <div className="content off" ref={conentRef[4]}>
               <div className="top">
                 <ul>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
-                <div className="icon">
+                <div className="icon" onClick={clickClose}>
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
@@ -228,7 +251,7 @@ export default function Portfolio1() {
             </div>
           </article>
           <article class="face6">
-            <div class="inner">
+            <div class="inner" onClick={clickMain}>
               <div className="txt">
                 <h2>Portfolio</h2>
                 <div className="stack">
@@ -245,14 +268,14 @@ export default function Portfolio1() {
               </div>
               <div className="vid">비디오</div>
             </div>
-            <div className="content">
+            <div className="content off" ref={conentRef[5]}>
               <div className="top">
                 <ul>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
-                <div className="icon">
+                <div className="icon" onClick={clickClose}>
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
@@ -261,7 +284,7 @@ export default function Portfolio1() {
           </article>
         </section>
 
-        <div className="btn">
+        <div className="btn" ref={btnRef}>
           <div className="btn_left" onClick={handlePrevClick}></div>
           <div className="btn_right" onClick={handleNextClick}></div>
         </div>
