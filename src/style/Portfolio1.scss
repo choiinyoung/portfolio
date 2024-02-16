@@ -5,11 +5,21 @@
 }
 
 .portfolio1 {
-  // width: 90%;
+  width: 100%;
   height: 110vh;
   // border: 1px solid;
   margin: 0 auto;
   overflow: hidden;
+  .title {
+    position: relative;
+    font-size: 5vh;
+    /* z-index: 100; */
+    // background: orange;
+    top: 10%;
+    /* bottom: 0; */
+    width: 15%;
+    left: 5%;
+  }
   .on {
     display: block;
     animation: open 0.5s ease-in;
@@ -31,7 +41,7 @@
     height: 78%;
     perspective: 12000px;
     // border: 1px solid red;
-    top: 16vh;
+    top: 10%;
 
     #circle {
       width: 50%;

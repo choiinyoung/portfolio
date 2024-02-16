@@ -56,6 +56,8 @@ export default function Portfolio1() {
   return (
     <div className="portfolio1">
       <div id="wrap">
+        <div className="title">Portfolio#1</div>
+
         <section id="circle" ref={carouselRef}>
           <article class="face1">
             <div class="inner" onClick={clickMain}>
