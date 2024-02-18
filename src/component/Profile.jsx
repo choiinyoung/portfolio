@@ -5,6 +5,9 @@ import "../style/Profile.scss";
 export default function Profile() {
   return (
     <div className="profile">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
       <div className="all">
         <div className="title">Profile</div>
         <div className="all_controller">
@@ -74,19 +77,6 @@ export default function Profile() {
                   <br></br>
                   적용하는 데에 큰 흥미를 느끼고 있습니다.
                 </p>
-              </div>
-            </div>
-            <div className="hash">
-              <div className="hash_all">
-                <ul>
-                  <li>#ENTP</li>
-                  <li>#열정열정열정</li>
-                  <li>#긍정적</li>
-                  <li>#해피</li>
-                  <li>#다재다능한</li>
-                  <li>#강아지</li>
-                  <li>#귀여운거</li>
-                </ul>
               </div>
             </div>
           </div>
