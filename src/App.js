@@ -83,7 +83,7 @@ function App() {
         <Profile />
         <Available />
         <Portfolio1 />
-        <Portfolio2 />
+        {/* <Portfolio2 /> */}
       </div>
     </>
   );

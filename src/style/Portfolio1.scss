@@ -39,7 +39,7 @@
     position: relative;
     width: 100%;
     height: 78%;
-    perspective: 12000px;
+    // perspective: 12000px;
     // border: 1px solid red;
     top: 10%;
 
@@ -49,7 +49,7 @@
       position: relative;
       top: 12%;
       margin: 0 auto;
-      transform-style: preserve-3d;
+      // transform-style: preserve-3d;
       transition: all 0.5s ease;
       /* animation: ani linear 40s infinite; */
 
