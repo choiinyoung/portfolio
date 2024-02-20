@@ -54,17 +54,6 @@ export default function Header() {
             <FontAwesomeIcon icon={faFileCode} />
           </Link>
         </li>
-        <li>
-          <Link
-            to="portfolio2"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={1000}
-          >
-            <FontAwesomeIcon icon={faPenNib} />
-          </Link>
-        </li>
       </ul>
     </div>
   );

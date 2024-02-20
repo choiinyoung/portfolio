@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 $gradiant: linear-gradient(
   90deg,
-  rgba(255, 255, 255, 0.5) 0%,
+  rgba(250, 211, 228, 0.5) 0%,
   rgba(238, 174, 202, 0.5) 50%,
   rgba(148, 187, 233, 0.5) 100%
 );
@@ -31,6 +31,20 @@ body {
   // overflow: hidden;
   font-family: "Noto Sans KR", sans-serif;
   // color: white;
-  // background: $gradiant;
+  background: $gradiant;
   // border: 1px solid red;
+  // animation: colorChange 10s ease infinite;
+  // background-size: 400% 400%;
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <>
       <div className="all">
-        <div className="bg-video">
+        {/* <div className="bg-video">
           <video className="content" autoPlay loop muted>
             <source src={bg} type="video/mp4" />
           </video>
-        </div>
+        </div> */}
         <div className="home">
           <div class="wrapper">
             <h1 contenteditable data-heading="Web Developer">
