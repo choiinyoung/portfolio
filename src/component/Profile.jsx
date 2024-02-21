@@ -24,7 +24,7 @@ export default function Profile() {
           <div className="content">
             <div className="education">
               <div className="edu_all">
-                <h2>Education</h2>
+                <h2>[ Education ]</h2>
                 <div className="line"></div>
                 <ul>
                   <li>
@@ -41,10 +41,11 @@ export default function Profile() {
                   </li>
                 </ul>
               </div>
+              <div className="box"></div>
             </div>
             <div className="license">
               <div className="lic_all">
-                <h2>License</h2>
+                <h2>[ License ]</h2>
                 <div className="line"></div>
                 <ul>
                   <li>
@@ -64,7 +65,7 @@ export default function Profile() {
             </div>
             <div className="about">
               <div className="about_all">
-                <h2>About Me</h2>
+                <h2>[ About Me ]</h2>
                 <div className="line"></div>
                 <p>
                   기술적인 역량 뿐만 아니라, 사람과의 원활한 의사소통을

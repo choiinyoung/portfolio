@@ -39,12 +39,7 @@ export default function Available() {
     AOS.init();
   });
   return (
-    <div
-      data-aos="flip-left"
-      data-aos-duration="3000"
-      data-aos-easing="linear"
-      className="available"
-    >
+    <div className="available">
       <div className="bg">{renderSelectedComponent()}</div>
 
       <div className="top">
