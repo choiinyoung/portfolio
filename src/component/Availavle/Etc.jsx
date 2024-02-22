@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/etc.scss";
 import node_img from "../../img/node.png";
 import mongo_img from "../../img/mongodb.png";
 import mysql_img from "../../img/mysql.png";
@@ -39,12 +38,14 @@ export default function Etc() {
 
   return (
     <>
-      <div className="etc_img">
+      <div className="etc_img all">
         <ul>
           <li>
-            <div className="pie-chart pic-chart1">
+            <div className="chart ">
               {/* <Doughnut data={Data2} options={Options}></Doughnut> */}
-              <img src={node_img} alt="node_img" />
+              <div className="img">
+                <img src={node_img} alt="node_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -77,10 +78,11 @@ export default function Etc() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart2">
+            <div className="chart">
               {/* <Doughnut data={Data2} options={Options}></Doughnut> */}
-              <img src={npm_img} alt="npm_img" />
-
+              <div className="img">
+                <img src={npm_img} alt="npm_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -114,9 +116,11 @@ export default function Etc() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart3">
+            <div className="chart">
               {/* <Doughnut data={Data1} options={Options}></Doughnut> */}
-              <img src={mysql_img} alt="mysql_img" />
+              <div className="img">
+                <img src={mysql_img} alt="mysql_img" />
+              </div>
 
               <div className="right">
                 <BarChart
@@ -151,9 +155,11 @@ export default function Etc() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart4">
+            <div className="chart ">
               {/* <Doughnut data={Data1} options={Options}></Doughnut> */}
-              <img src={mongo_img} alt="mongo_img" className="mongo" />
+              <div className="img">
+                <img src={mongo_img} alt="mongo_img" className="mongo" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}

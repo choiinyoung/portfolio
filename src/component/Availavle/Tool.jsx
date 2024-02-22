@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/tool.scss";
 import vscode_img from "../../img/vscode.png";
 import git_img from "../../img/git.png";
 import ph_img from "../../img/photoshop.png";
@@ -16,13 +15,14 @@ export default function Tool() {
 
   return (
     <>
-      <div className="tool_img">
+      <div className="tool_img all">
         <ul>
           <li>
-            <div className="pie-chart pic-chart1">
+            <div className="chart ">
               {/* <Doughnut data={Data1} options={Options}></Doughnut> */}
-              <img src={vscode_img} alt="vscode_img" />
-
+              <div className="img">
+                <img src={vscode_img} alt="vscode_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -55,10 +55,11 @@ export default function Tool() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart2">
+            <div className="chart">
               {/* <Doughnut data={Data1} options={Options}></Doughnut> */}
-              <img src={es_pr_img} alt="es_pr_img" />
-
+              <div className="img">
+                <img src={es_pr_img} alt="es_pr_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -91,9 +92,11 @@ export default function Tool() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart3">
+            <div className="chart">
               {/* <Doughnut data={Data2} options={Options}></Doughnut> */}
-              <img src={git_img} alt="git_img" />
+              <div className="img">
+                <img src={git_img} alt="git_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -126,9 +129,11 @@ export default function Tool() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart4">
+            <div className="chart">
               {/* <Doughnut data={Data1} options={Options}></Doughnut> */}
-              <img src={ph_img} alt="ph_img" />
+              <div className="img">
+                <img src={ph_img} alt="ph_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -157,9 +162,11 @@ export default function Tool() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart5">
+            <div className="chart ">
               {/* <Doughnut data={Data1} options={Options}></Doughnut> */}
-              <img src={ai_img} alt="ai_img" />
+              <div className="img">
+                <img src={ai_img} alt="ai_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}

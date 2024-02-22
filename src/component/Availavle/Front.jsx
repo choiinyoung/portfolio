@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/front.scss";
 import html_img from "../../img/html.png";
 import css_img from "../../img/css.png";
 import sass_img from "../../img/sass.png";
@@ -73,13 +72,14 @@ export default function Front() {
 
   return (
     <>
-      <div className="front_img">
+      <div className="front_img all">
         <ul>
           <li>
-            <div className="pie-chart pic-chart1">
+            <div className="chart">
               {/* <Bar data={Data1} options={Options}></Bar> */}
-              <img src={html_img} alt="html_img" />
-
+              <div className="img">
+                <img src={html_img} alt="html_img" />
+              </div>
               <div className="right">
                 <BarChart
                   width={450}
@@ -113,44 +113,10 @@ export default function Front() {
           </li>
 
           <li>
-            <div className="pie-chart pic-chart4">
-              <img src={sass_img} alt="sass_img" />
-              <div className="right">
-                {/* <Bar data={Data2} options={Options}></Bar> */}
-                <BarChart
-                  width={450}
-                  height={60}
-                  data={data1}
-                  layout="vertical"
-                >
-                  <XAxis dataKey="avg" type="number" domain={[0, 100]} hide />
-                  <YAxis
-                    type="category"
-                    dataKey="currency"
-                    axisLine={false}
-                    dx={-5}
-                    tickLine={false}
-                    style={{ fill: "black" }}
-                  />
-                  <Bar
-                    dataKey="data1"
-                    stackId="a"
-                    fill="crimson"
-                    label={{ position: "right" }}
-                  />
-                </BarChart>
-
-                <p className="txt">
-                  변수, 믹스인, 중첩 등을 활용하여
-                  <br />
-                  코드를 더 간결하고 유지보수하기 쉽게 작성할 수 있습니다.
-                </p>
+            <div className="chart">
+              <div className="img">
+                <img src={css_img} alt="css_img" />
               </div>
-            </div>
-          </li>
-          <li>
-            <div className="pie-chart pic-chart2">
-              <img src={css_img} alt="css_img" />
               <div className="right">
                 {/* <Bar data={Data1} options={Options}></Bar> */}
                 <BarChart
@@ -185,44 +151,10 @@ export default function Front() {
           </li>
 
           <li>
-            <div className="pie-chart">
-              <img src={react_img} alt="react_img" />
-              <div className="right">
-                {/* <Bar data={Data3} options={Options}></Bar> */}
-                <BarChart
-                  width={450}
-                  height={60}
-                  data={data3}
-                  layout="vertical"
-                >
-                  <XAxis dataKey="avg" type="number" domain={[0, 100]} hide />
-                  <YAxis
-                    type="category"
-                    dataKey="currency"
-                    axisLine={false}
-                    dx={-5}
-                    tickLine={false}
-                    style={{ fill: "black" }}
-                  />
-                  <Bar
-                    dataKey="data3"
-                    stackId="a"
-                    fill="crimson"
-                    label={{ position: "right" }}
-                  />
-                </BarChart>
-
-                <p className="txt">
-                  React를 사용하여 프로젝트를 한 경험이 있으며,
-                  <br />
-                  React의 개념을 이해하고 활용 할 수 있습니다.
-                </p>
+            <div className="chart">
+              <div className="img">
+                <img src={js_img} alt="js_img" />
               </div>
-            </div>
-          </li>
-          <li>
-            <div className="pie-chart pic-chart3">
-              <img src={js_img} alt="js_img" />
               <div className="right">
                 {/* <Bar data={Data3} options={Options}></Bar> */}
                 <BarChart
@@ -257,8 +189,86 @@ export default function Front() {
             </div>
           </li>
           <li>
-            <div className="pie-chart pic-chart4">
-              <img src={ts_img} alt="ts_img" />
+            <div className="chart">
+              <div className="img">
+                <img src={sass_img} alt="sass_img" />
+              </div>
+              <div className="right">
+                {/* <Bar data={Data2} options={Options}></Bar> */}
+                <BarChart
+                  width={450}
+                  height={60}
+                  data={data1}
+                  layout="vertical"
+                >
+                  <XAxis dataKey="avg" type="number" domain={[0, 100]} hide />
+                  <YAxis
+                    type="category"
+                    dataKey="currency"
+                    axisLine={false}
+                    dx={-5}
+                    tickLine={false}
+                    style={{ fill: "black" }}
+                  />
+                  <Bar
+                    dataKey="data1"
+                    stackId="a"
+                    fill="crimson"
+                    label={{ position: "right" }}
+                  />
+                </BarChart>
+
+                <p className="txt">
+                  변수, 믹스인, 중첩 등을 활용하여
+                  <br />
+                  코드를 더 간결하고 유지보수하기 쉽게 작성할 수 있습니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="chart">
+              <div className="img">
+                <img src={react_img} alt="react_img" />
+              </div>
+              <div className="right">
+                {/* <Bar data={Data3} options={Options}></Bar> */}
+                <BarChart
+                  width={450}
+                  height={60}
+                  data={data3}
+                  layout="vertical"
+                >
+                  <XAxis dataKey="avg" type="number" domain={[0, 100]} hide />
+                  <YAxis
+                    type="category"
+                    dataKey="currency"
+                    axisLine={false}
+                    dx={-5}
+                    tickLine={false}
+                    style={{ fill: "black" }}
+                  />
+                  <Bar
+                    dataKey="data3"
+                    stackId="a"
+                    fill="crimson"
+                    label={{ position: "right" }}
+                  />
+                </BarChart>
+
+                <p className="txt">
+                  React를 사용하여 프로젝트를 한 경험이 있으며,
+                  <br />
+                  React의 개념을 이해하고 활용 할 수 있습니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="chart">
+              <div className="img">
+                <img src={ts_img} alt="ts_img" />
+              </div>
               <div className="right">
                 {/* <Bar data={Data4} options={Options}></Bar> */}
                 <BarChart
