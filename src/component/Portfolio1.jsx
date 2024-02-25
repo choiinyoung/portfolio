@@ -7,7 +7,11 @@ import react from "../img/react.png";
 import scss from "../img/sass.png";
 import node from "../img/node.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faXmark,
+  faAngleLeft,
+  faAngleRight,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Portfolio1() {
   const carouselRef = useRef(null);
   const conentRef = [
@@ -57,7 +61,6 @@ export default function Portfolio1() {
     <div className="portfolio1">
       <div id="wrap">
         <div className="title">Portfolio</div>
-
         <section id="circle" ref={carouselRef}>
           <article class="face1">
             <div class="inner" onClick={clickMain}>
@@ -309,10 +312,17 @@ export default function Portfolio1() {
             </div>
           </article>
         </section>
+        {/* <div className="btn" ref={btnRef}>
+          <div className="btn_left" onClick={handlePrevClick}></div>
+          <div className="btn_right" onClick={handleNextClick}></div> */}
 
         <div className="btn" ref={btnRef}>
-          <div className="btn_left" onClick={handlePrevClick}></div>
-          <div className="btn_right" onClick={handleNextClick}></div>
+          <div className="btn_left" onClick={handlePrevClick}>
+            <FontAwesomeIcon icon={faAngleLeft} />
+          </div>
+          <div className="btn_right" onClick={handleNextClick}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </div>
         </div>
       </div>
     </div>
