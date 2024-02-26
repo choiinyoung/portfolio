@@ -95,7 +95,13 @@ export default function Portfolio1() {
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
-              <div className="window"></div>
+              <div className="window">
+                <h2>
+                  HomePage
+                  <br />
+                  Renewal1
+                </h2>
+              </div>
             </div>
           </article>
           <article class="face2">
@@ -136,7 +142,13 @@ export default function Portfolio1() {
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
-              <div className="window"></div>
+              <div className="window">
+                <h2>
+                  HomePage
+                  <br />
+                  Renewal2
+                </h2>
+              </div>
             </div>
           </article>
           <article class="face3">
@@ -177,7 +189,13 @@ export default function Portfolio1() {
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
-              <div className="window"></div>
+              <div className="window">
+                <h2>
+                  Musinsa
+                  <br />
+                  Renewal
+                </h2>
+              </div>
             </div>
           </article>
           <article class="face4">
@@ -212,7 +230,9 @@ export default function Portfolio1() {
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
-              <div className="window"></div>
+              <div className="window">
+                <h2>Sharing</h2>
+              </div>
             </div>
           </article>
           <article class="face5">
@@ -249,7 +269,9 @@ export default function Portfolio1() {
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
-              <div className="window"></div>
+              <div className="window">
+                <h2>Re:Used</h2>
+              </div>
             </div>
           </article>
           <article class="face6">
@@ -281,7 +303,9 @@ export default function Portfolio1() {
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
-              <div className="window"></div>
+              <div className="window">
+                <h2>Portfolio</h2>
+              </div>
             </div>
           </article>
         </section>
