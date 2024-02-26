@@ -1,5 +1,25 @@
 @import url(../style/_reset.scss);
-
+@mixin btn {
+  top: 17vw;
+  font-size: 1vw;
+  position: absolute;
+  top: 20vw;
+  display: block;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  background: transparent;
+  border: 1px solid black;
+  width: 4%;
+  height: 6vh;
+  &:before {
+    font-family: "slick";
+    font-size: 10vh;
+    opacity: 0.75;
+    color: darkgray;
+    line-height: 0.5;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -43,194 +63,23 @@
     // border: 1px solid red;
     top: 10%;
 
-    #circle {
-      width: 50%;
-      height: 80%;
+    .slider-container {
+      border: 1px solid;
       position: relative;
-      top: 12%;
-      margin: 0 auto;
-      transform-style: preserve-3d;
-      transition: all 0.5s ease;
-      /* animation: ani linear 40s infinite; */
-
-      article {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
+      margin: 3% auto;
+      height: 90%;
+      .slick-prev {
+        @include btn();
         left: 0;
-        backface-visibility: hidden;
-        cursor: pointer;
-
-        .inner {
-          width: 100%;
-          height: 100%;
-          background-color: rgba(255, 255, 255, 0.8);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-            0 3px 6px rgba(0, 0, 0, 0.23);
-
-          display: flex;
-          position: relative;
-          .txt {
-            border-right: 1px solid rgba(128, 128, 128, 0.385);
-            width: 40%;
-            position: relative;
-            h2 {
-              position: absolute;
-              font-size: 4vh;
-              top: 20%;
-              left: 1.5vw;
-            }
-            .stack {
-              position: absolute;
-              // border: 1px solid;
-              top: 60%;
-              left: 1.5vw;
-              width: 85%;
-              height: 35%;
-              p {
-                font-size: 3vh;
-                margin-bottom: 3vh;
-              }
-              ul {
-                display: flex;
-                // border: 1px solid red;
-                align-items: center;
-                justify-content: space-around;
-                li {
-                  width: 33.333%;
-                  img {
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-              }
-            }
-          }
-          .vid {
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1),
-              0 3px 6px rgba(0, 0, 0, 0.1);
-            width: 45%;
-            height: 85%;
-            position: relative;
-            margin: 0 auto;
-            top: 7%;
-          }
-        }
-        .content {
-          position: relative;
-          width: 110%;
-          height: 120%;
-          /* border: 1px solid; */
-          /* margin: 0 auto; */
-          top: -110%;
-          left: -5%;
-          background: white;
-
-          border-radius: 2rem;
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-            0 3px 6px rgba(0, 0, 0, 0.23);
-
-          .top {
-            width: 100%;
-            height: 12%;
-            /* border: 1px solid; */
-            border-radius: 2rem 2rem 0 0;
-            background: lightgray;
-            ul {
-              width: 18%;
-              // border: 1px solid;
-              height: 45%;
-              top: 30%;
-              position: relative;
-              left: 3%;
-              display: flex;
-              justify-content: space-around;
-              li {
-                width: 21%;
-                border: 1px solid darkred;
-                background-color: red;
-                border-radius: 50%;
-                &:nth-child(2) {
-                  border: 1px solid darkorange;
-                  background-color: orange;
-                }
-                &:nth-child(3) {
-                  border: 1px solid darkgreen;
-                  background-color: green;
-                }
-              }
-            }
-            .icon {
-              width: 5%;
-              // border: 1px solid;
-              height: 60%;
-              position: relative;
-              left: 92%;
-              top: -25%;
-
-              .svg-inline--fa {
-                height: 3em;
-              }
-            }
-          }
+        &:before {
+          content: "<";
         }
       }
-      .face1 {
-        transform: rotateY(0deg) translateZ(-764px);
-      }
-
-      .face2 {
-        transform: rotateY(60deg) translateZ(-764px);
-      }
-
-      .face3 {
-        transform: rotateY(120deg) translateZ(-764px);
-      }
-
-      .face4 {
-        transform: rotateY(180deg) translateZ(-764px);
-      }
-
-      .face5 {
-        transform: rotateY(240deg) translateZ(-764px);
-      }
-
-      .face6 {
-        transform: rotateY(300deg) translateZ(-764px);
-      }
-    }
-
-    .btn {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      z-index: 10;
-      height: 10%;
-      // border: 1px solid;
-      // opacity: 0;
-      .btn_left {
-        width: 2%;
-        height: 90%;
-        position: absolute;
-        left: 10%;
-        // border: 1px solid;
-        cursor: pointer;
-
-        .svg-inline--fa {
-          height: 3em;
-        }
-      }
-      .btn_right {
-        width: 2%;
-        height: 90%;
-        position: absolute;
-        right: 10%;
-        // border: 1px solid;
-        cursor: pointer;
-
-        .svg-inline--fa {
-          height: 3em;
+      .slick-next {
+        @include btn();
+        right: 0;
+        &:before {
+          content: ">";
         }
       }
     }
