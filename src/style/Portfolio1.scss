@@ -207,30 +207,31 @@
       top: 50%;
       z-index: 10;
       height: 10%;
+      // border: 1px solid;
       // opacity: 0;
-      .btn_right::after {
-        position: absolute;
-        right: 10%;
-        top: 2vh;
-        content: "";
-        cursor: pointer;
-        width: 2.5vw;
-        height: 5vh;
-        border-top: 3px solid gray; /* 선 두께 */
-        border-right: 3px solid gray; /* 선 두께 */
-        transform: rotate(45deg); /* 각도 */
-      }
-      .btn_left::after {
+      .btn_left {
+        width: 2%;
+        height: 90%;
         position: absolute;
         left: 10%;
-        top: 2vh;
-        content: "";
+        // border: 1px solid;
         cursor: pointer;
-        width: 2.5vw;
-        height: 5vh;
-        border-top: 3px solid gray;
-        border-right: 3px solid gray;
-        transform: rotate(225deg);
+
+        .svg-inline--fa {
+          height: 3em;
+        }
+      }
+      .btn_right {
+        width: 2%;
+        height: 90%;
+        position: absolute;
+        right: 10%;
+        // border: 1px solid;
+        cursor: pointer;
+
+        .svg-inline--fa {
+          height: 3em;
+        }
       }
     }
   }
