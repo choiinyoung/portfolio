@@ -133,13 +133,16 @@ export default function Portfolio1() {
   const toggleClick = (option) => {
     const targetRef = clickRef[option].current;
     const siblingRef = targetRef.nextSibling;
+    const parentRef = siblingRef.parentNode;
 
     if (siblingRef.classList.contains("off")) {
       siblingRef.classList.remove("off");
       siblingRef.classList.add("on");
+      parentRef.style.height = "60%";
     } else {
       siblingRef.classList.remove("on");
       siblingRef.classList.add("off");
+      parentRef.style.height = "20%";
     }
     setChevronIcons((prevIcons) => ({
       ...prevIcons,
@@ -173,7 +176,7 @@ export default function Portfolio1() {
                           Skills
                         </div>
                         <ul className="skills">
-                          <li>React.js</li>
+                          <li>React</li>
                           <li>SCSS</li>
                         </ul>
                       </li>
@@ -191,39 +194,41 @@ export default function Portfolio1() {
                         <p>Front-end & Web Design 1</p>
                       </li>
                     </ul>
-                    <div className="introduce">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Intr1")}
-                        ref={clickRef.Intr1}
-                      >
-                        <p>💡&nbsp; 소개</p>
-                        <FontAwesomeIcon icon={chevronIcon.Intr1} />
+                    <div className="bottom_txt">
+                      <div className="introduce">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Intr1")}
+                          ref={clickRef.Intr1}
+                        >
+                          <p>💡&nbsp; 소개</p>
+                          <FontAwesomeIcon icon={chevronIcon.Intr1} />
+                        </div>
+                        <p className="detail_txt off">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Ipsam totam voluptatibus quod architecto,
+                          dolores maiores, recusandae suscipit et sequi eos
+                          molestiae, quaerat velit. Perspiciatis corrupti,
+                          nostrum excepturi ratione blanditiis id!
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ipsam totam voluptatibus quod architecto, dolores
-                        maiores, recusandae suscipit et sequi eos molestiae,
-                        quaerat velit. Perspiciatis corrupti, nostrum excepturi
-                        ratione blanditiis id!
-                      </p>
-                    </div>
-                    <div className="mine">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Mine1")}
-                        ref={clickRef.Mine1}
-                      >
-                        <p>👩🏻‍💻&nbsp;담당한 기능</p>
-                        <FontAwesomeIcon icon={chevronIcon.Mine1} />
+                      <div className="mine">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Mine1")}
+                          ref={clickRef.Mine1}
+                        >
+                          <p>👩🏻‍💻&nbsp;담당한 기능</p>
+                          <FontAwesomeIcon icon={chevronIcon.Mine1} />
+                        </div>
+                        <p className="detail_txt off">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Ipsam totam voluptatibus quod architecto,
+                          dolores maiores, recusandae suscipit et sequi eos
+                          molestiae, quaerat velit. Perspiciatis corrupti,
+                          nostrum excepturi ratione blanditiis id!
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ipsam totam voluptatibus quod architecto, dolores
-                        maiores, recusandae suscipit et sequi eos molestiae,
-                        quaerat velit. Perspiciatis corrupti, nostrum excepturi
-                        ratione blanditiis id!
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -251,7 +256,7 @@ export default function Portfolio1() {
                           Skills
                         </div>
                         <ul className="skills">
-                          <li>React.js</li>
+                          <li>React</li>
                           <li>SCSS</li>
                         </ul>
                       </li>
@@ -269,39 +274,41 @@ export default function Portfolio1() {
                         <p>Front-end & Web Design 1</p>
                       </li>
                     </ul>
-                    <div className="introduce">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Intr2")}
-                        ref={clickRef.Intr2}
-                      >
-                        <p>💡&nbsp; 소개</p>
-                        <FontAwesomeIcon icon={chevronIcon.Intr2} />
+                    <div className="bottom_txt">
+                      <div className="introduce">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Intr2")}
+                          ref={clickRef.Intr2}
+                        >
+                          <p>💡&nbsp; 소개</p>
+                          <FontAwesomeIcon icon={chevronIcon.Intr2} />
+                        </div>
+                        <p className="detail_txt off">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Ipsam totam voluptatibus quod architecto,
+                          dolores maiores, recusandae suscipit et sequi eos
+                          molestiae, quaerat velit. Perspiciatis corrupti,
+                          nostrum excepturi ratione blanditiis id!
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ipsam totam voluptatibus quod architecto, dolores
-                        maiores, recusandae suscipit et sequi eos molestiae,
-                        quaerat velit. Perspiciatis corrupti, nostrum excepturi
-                        ratione blanditiis id!
-                      </p>
-                    </div>
-                    <div className="mine">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Mine2")}
-                        ref={clickRef.Mine2}
-                      >
-                        <p>👩🏻‍💻&nbsp;담당한 기능</p>
-                        <FontAwesomeIcon icon={chevronIcon.Mine2} />
+                      <div className="mine">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Mine2")}
+                          ref={clickRef.Mine2}
+                        >
+                          <p>👩🏻‍💻&nbsp;담당한 기능</p>
+                          <FontAwesomeIcon icon={chevronIcon.Mine2} />
+                        </div>
+                        <p className="detail_txt off">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Ipsam totam voluptatibus quod architecto,
+                          dolores maiores, recusandae suscipit et sequi eos
+                          molestiae, quaerat velit. Perspiciatis corrupti,
+                          nostrum excepturi ratione blanditiis id!
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ipsam totam voluptatibus quod architecto, dolores
-                        maiores, recusandae suscipit et sequi eos molestiae,
-                        quaerat velit. Perspiciatis corrupti, nostrum excepturi
-                        ratione blanditiis id!
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -348,43 +355,46 @@ export default function Portfolio1() {
                         <p>Web Design & Publisher 2</p>
                       </li>
                     </ul>
-                    <div className="introduce">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Intr3")}
-                        ref={clickRef.Intr3}
-                      >
-                        <p>💡&nbsp; 소개</p>
-                        <FontAwesomeIcon icon={chevronIcon.Intr3} />
+                    <div className="bottom_txt">
+                      <div className="introduce">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Intr3")}
+                          ref={clickRef.Intr3}
+                        >
+                          <p>💡&nbsp; 소개</p>
+                          <FontAwesomeIcon icon={chevronIcon.Intr3} />
+                        </div>
+                        <p className="detail_txt off">
+                          모바일 무신사 디자인은 깔끔하고 사용자가 보기 편하게
+                          잘 디자인 되어있지만
+                          <br />
+                          웹사이트로 본 무신사는 제품들과 관련 프로모션등이
+                          <br />
+                          복잡하고 한눈에 보기 힘들어 리뉴얼 하게 되었다.
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        모바일 무신사 디자인은 깔끔하고 사용자가 보기 편하게 잘
-                        디자인 되어있지만
-                        <br />
-                        웹사이트로 본 무신사는 제품들과 관련 프로모션등이
-                        <br />
-                        복잡하고 한눈에 보기 힘들어 리뉴얼 하게 되었다.
-                      </p>
-                    </div>
-                    <div className="mine">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Mine3")}
-                        ref={clickRef.Mine3}
-                      >
-                        <p>👩🏻‍💻&nbsp;담당한 기능</p>
-                        <FontAwesomeIcon icon={chevronIcon.Mine3} />
+                      <div className="mine">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Mine3")}
+                          ref={clickRef.Mine3}
+                        >
+                          <p>👩🏻‍💻&nbsp;담당한 기능</p>
+                          <FontAwesomeIcon icon={chevronIcon.Mine3} />
+                        </div>
+                        <p className="detail_txt off">
+                          musinsa에 메뉴를 다시 정리하여 디자인 하였고
+                          <br />
+                          BEST상품과 SEASON상품을 나눠
+                          <br />
+                          hover했을 때 해당 품목에 인기상품 6가지를 보이게
+                          하였다
+                          <br />
+                          또한 스와이프 라이브러리를 사용하여 5개의 매거진을
+                          보이게 하였다.
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        musinsa에 메뉴를 다시 정리하여 디자인 하였고
-                        <br />
-                        BEST상품과 SEASON상품을 나눠
-                        <br />
-                        hover했을 때 해당 품목에 인기상품 6가지를 보이게 하였다
-                        <br />
-                        또한 스와이프 라이브러리를 사용하여 5개의 매거진을
-                        보이게 하였다.
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -412,8 +422,8 @@ export default function Portfolio1() {
                           Skills
                         </div>
                         <ul className="skills">
-                          <li>React.js</li>
-                          <li>Node.js</li>
+                          <li>React</li>
+                          <li>Node</li>
                           <li>SCSS</li>
                           <li>MySQL</li>
                         </ul>
@@ -436,58 +446,60 @@ export default function Portfolio1() {
                         </p>
                       </li>
                     </ul>
-                    <div className="introduce">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Intr4")}
-                        ref={clickRef.Intr4}
-                      >
-                        <p>💡&nbsp; 소개</p>
-                        <FontAwesomeIcon icon={chevronIcon.Intr4} />
+                    <div className="bottom_txt">
+                      <div className="introduce">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Intr4")}
+                          ref={clickRef.Intr4}
+                        >
+                          <p>💡&nbsp; 소개</p>
+                          <FontAwesomeIcon icon={chevronIcon.Intr4} />
+                        </div>
+                        <p className="detail_txt off">
+                          물건관리대여홈페이지로 사용자모드와 관리자모드로 총
+                          2가지를 만들었습니다
+                          <br />
+                          사용자모드에서는 어떤 물건들이 대여 가능한지,
+                          <br />
+                          내가 현재 어떤 물건을 대여했는지 확인여부와
+                          <br />
+                          최신 공지사항을 확인 할 수 있습니다
+                          <br />
+                          사용자모드에는 물건을 등록하거나 삭제할 수 있고
+                          대여신청이 들어온 물건을 볼 수 있고
+                          <br />
+                          그에 대한 승인을 할 수 있습니다.
+                          <br />
+                          또한 공지사항에 글을 작성할 수 있고 물건들의 대여
+                          기록을 볼 수 있습니다
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        물건관리대여홈페이지로 사용자모드와 관리자모드로 총
-                        2가지를 만들었습니다
-                        <br />
-                        사용자모드에서는 어떤 물건들이 대여 가능한지,
-                        <br />
-                        내가 현재 어떤 물건을 대여했는지 확인여부와
-                        <br />
-                        최신 공지사항을 확인 할 수 있습니다
-                        <br />
-                        사용자모드에는 물건을 등록하거나 삭제할 수 있고
-                        대여신청이 들어온 물건을 볼 수 있고
-                        <br />
-                        그에 대한 승인을 할 수 있습니다.
-                        <br />
-                        또한 공지사항에 글을 작성할 수 있고 물건들의 대여 기록을
-                        볼 수 있습니다
-                      </p>
-                    </div>
-                    <div className="mine">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Mine4")}
-                        ref={clickRef.Mine4}
-                      >
-                        <p>👩🏻‍💻&nbsp;담당한 기능</p>
-                        <FontAwesomeIcon icon={chevronIcon.Mine4} />
+                      <div className="mine">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Mine4")}
+                          ref={clickRef.Mine4}
+                        >
+                          <p>👩🏻‍💻&nbsp;담당한 기능</p>
+                          <FontAwesomeIcon icon={chevronIcon.Mine4} />
+                        </div>
+                        <p className="detail_txt off">
+                          - React 라이브러리인 `react-calendar`을 활용하여 현재
+                          날짜를 시각적으로 표현하는 달력을 구현
+                          <br />
+                          - 사용자에게 직관적인 날짜 선택 기능을 제공
+                          <br />
+                          - UI/UX를 강화하기 위해
+                          `react-calendar/dist/Calendar.css` 을 적용
+                          <br />- `react-chatbot-kit` 라이브러리를 활용하여
+                          사용자와 자동 응답형 챗봇을 구현
+                          <br />- 챗봇은 버튼을 선택하면 해당 주제에 대한 자세한
+                          설명을 제공
+                          <br />- 사용자가 직접 문장을 입력하면 미리 설정한
+                          다양한 답변 중에서 랜덤하게 선택하여 응답하도록 설계
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        - React 라이브러리인 `react-calendar`을 활용하여 현재
-                        날짜를 시각적으로 표현하는 달력을 구현
-                        <br />
-                        - 사용자에게 직관적인 날짜 선택 기능을 제공
-                        <br />
-                        - UI/UX를 강화하기 위해
-                        `react-calendar/dist/Calendar.css` 을 적용
-                        <br />- `react-chatbot-kit` 라이브러리를 활용하여
-                        사용자와 자동 응답형 챗봇을 구현
-                        <br />- 챗봇은 버튼을 선택하면 해당 주제에 대한 자세한
-                        설명을 제공
-                        <br />- 사용자가 직접 문장을 입력하면 미리 설정한 다양한
-                        답변 중에서 랜덤하게 선택하여 응답하도록 설계
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -515,7 +527,7 @@ export default function Portfolio1() {
                           Skills
                         </div>
                         <ul className="skills">
-                          <li>React.js</li>
+                          <li>React</li>
                           <li>SpringBoot</li>
                           <li>SCSS</li>
                           <li>MySQL</li>
@@ -538,31 +550,34 @@ export default function Portfolio1() {
                         </p>
                       </li>
                     </ul>
-                    <div className="introduce">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Intr5")}
-                        ref={clickRef.Intr5}
-                      >
-                        <p>💡&nbsp; 소개</p>
-                        <FontAwesomeIcon icon={chevronIcon.Intr5} />
+                    <div className="bottom_txt">
+                      <div className="introduce">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Intr5")}
+                          ref={clickRef.Intr5}
+                        >
+                          <p>💡&nbsp; 소개</p>
+                          <FontAwesomeIcon icon={chevronIcon.Intr5} />
+                        </div>
+                        <p className="detail_txt off">중고거래하는 사이트</p>
                       </div>
-                      <p className="detail_txt off">중고거래하는 사이트</p>
-                    </div>
-                    <div className="mine">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Mine5")}
-                        ref={clickRef.Mine5}
-                      >
-                        <p>👩🏻‍💻&nbsp;담당한 기능</p>
-                        <FontAwesomeIcon icon={chevronIcon.Mine5} />
+                      <div className="mine">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Mine5")}
+                          ref={clickRef.Mine5}
+                        >
+                          <p>👩🏻‍💻&nbsp;담당한 기능</p>
+                          <FontAwesomeIcon icon={chevronIcon.Mine5} />
+                        </div>
+                        <p className="detail_txt off">
+                          - MYPAGE에서 디자인과 기능을 구축하며, 백엔드와의
+                          데이터 통신을 통해 사용자의 정보를 보여주고 사용자가
+                          입력한 데이터를 백엔드에 전송하여 DB를 수정하는 기능을
+                          구현
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        - MYPAGE에서 디자인과 기능을 구축하며, 백엔드와의 데이터
-                        통신을 통해 사용자의 정보를 보여주고 사용자가 입력한
-                        데이터를 백엔드에 전송하여 DB를 수정하는 기능을 구현
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -588,11 +603,12 @@ export default function Portfolio1() {
                         <div className="content_title">
                           <FontAwesomeIcon icon={faGears} />
                           Skills
-                          <ul className="skills">
-                            <li>React.js</li>
-                            <li>SCSS</li>
-                          </ul>
                         </div>
+
+                        <ul className="skills">
+                          <li>React</li>
+                          <li>SCSS</li>
+                        </ul>
                       </li>
                       <li>
                         <div className="content_title">
@@ -608,31 +624,33 @@ export default function Portfolio1() {
                         <p>Front-end & Web Design 1</p>
                       </li>
                     </ul>
-                    <div className="introduce">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Intr6")}
-                        ref={clickRef.Intr6}
-                      >
-                        <p>💡&nbsp; 소개</p>
-                        <FontAwesomeIcon icon={chevronIcon.Intr6} />
+                    <div className="bottom_txt">
+                      <div className="introduce">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Intr6")}
+                          ref={clickRef.Intr6}
+                        >
+                          <p>💡&nbsp; 소개</p>
+                          <FontAwesomeIcon icon={chevronIcon.Intr6} />
+                        </div>
+                        <p className="detail_txt off">
+                          저에 대한 내용과 지금까지 했던 포트폴리오를 정리하기
+                          위해 제작하였습니다.
+                          <br />
+                        </p>
                       </div>
-                      <p className="detail_txt off">
-                        저에 대한 내용과 지금까지 했던 포트폴리오를 정리하기
-                        위해 제작하였습니다.
-                        <br />
-                      </p>
-                    </div>
-                    <div className="mine">
-                      <div
-                        className="content_title"
-                        onClick={() => toggleClick("Mine6")}
-                        ref={clickRef.Mine6}
-                      >
-                        <p>👩🏻‍💻&nbsp;담당한 기능</p>
-                        <FontAwesomeIcon icon={chevronIcon.Mine6} />
+                      <div className="mine">
+                        <div
+                          className="content_title"
+                          onClick={() => toggleClick("Mine6")}
+                          ref={clickRef.Mine6}
+                        >
+                          <p>👩🏻‍💻&nbsp;담당한 기능</p>
+                          <FontAwesomeIcon icon={chevronIcon.Mine6} />
+                        </div>
+                        <p className="detail_txt off">포트폴리오</p>
                       </div>
-                      <p className="detail_txt off">포트폴리오</p>
                     </div>
                   </div>
                 </div>

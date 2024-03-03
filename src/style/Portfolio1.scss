@@ -35,11 +35,15 @@
     left: 5%;
   }
   .on {
-    display: block;
+    opacity: 1;
+    height: 20;
+    height: 100%;
+
     transition: 0.2s all ease;
   }
   .off {
-    display: none;
+    opacity: 0;
+    height: 13%;
   }
   .scale_off {
     transform: scale(0.7);
@@ -105,31 +109,6 @@
                 left: 4%;
                 font-weight: 400;
               }
-              // .Skills {
-              //   position: absolute;
-              //   // border: 1px solid;
-              //   top: 60%;
-              //   left: 1.5vw;
-              //   width: 85%;
-              //   height: 35%;
-              //   p {
-              //     font-size: 3vh;
-              //     margin-bottom: 3vh;
-              //   }
-              //   ul {
-              //     display: flex;
-              //     // border: 1px solid red;
-              //     align-items: center;
-              //     justify-content: space-around;
-              //     li {
-              //       width: 33.333%;
-              //       img {
-              //         width: 100%;
-              //         height: 100%;
-              //       }
-              //     }
-              //   }
-              // }
               .detail {
                 border: 1px solid black;
                 position: relative;
@@ -137,6 +116,7 @@
                 width: 95%;
                 height: 80%;
                 // overflow-y: scroll;
+                font-size: 2vh;
                 .content_title {
                   display: flex;
                   width: 100%;
@@ -149,7 +129,7 @@
                   li {
                     display: flex;
                     justify-content: space-between;
-                    // margin-bottom: 4%;
+                    margin-bottom: 4%;
                     width: 100%;
                     height: 10%;
 
@@ -169,19 +149,39 @@
                     }
                     .skills {
                       display: flex;
+                      width: 50%;
+                      flex-direction: row;
+                      border: 1px solid;
+                      height: 100%;
+                      flex-wrap: wrap;
+                      text-align: center;
+                      justify-content: space-around;
+
+                      li {
+                        // border: 1px solid;
+                        justify-content: right;
+                        width: 30%;
+                        height: 100%;
+                      }
                     }
                   }
                 }
-                .introduce {
-                  margin-bottom: 5%;
-                  transition: 0.5s all ease-in;
-                  padding-top: 8%;
-                }
-                .detail_txt {
-                  line-height: 1.8;
-                  margin-top: 3%;
-                  height: 13%;
-                  transition: 0.5s all ease;
+                .bottom_txt {
+                  border: 1px solid;
+                  width: 100%;
+                  height: 80%;
+                  .introduce {
+                    margin-bottom: 12%;
+                    transition: 0.5s all ease-in;
+                    padding-top: 8%;
+                    height: 20%;
+                  }
+                  .detail_txt {
+                    line-height: 1.8;
+                    margin-top: 3%;
+                    transition: 0.5s all ease;
+                    overflow-y: scroll;
+                  }
                 }
               }
             }
