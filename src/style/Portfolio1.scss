@@ -110,11 +110,11 @@
                 font-weight: 400;
               }
               .detail {
-                border: 1px solid black;
+                // border: 1px solid black;
                 position: relative;
                 margin: 8% auto;
                 width: 95%;
-                height: 80%;
+                height: 83%;
                 // overflow-y: scroll;
                 font-size: 2vh;
                 .content_title {
@@ -124,14 +124,20 @@
                   font-weight: bold;
                   font-size: 2.5vh;
                 }
+                p {
+                  text-align: right;
+                }
                 ul {
                   // margin-bottom: 12%;
+                  // border: 1px solid;
+                  width: 100%;
+                  height: 48%;
                   li {
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 4%;
                     width: 100%;
-                    height: 10%;
+                    // height: 10%;
 
                     .content_title {
                       width: 25%;
@@ -149,38 +155,65 @@
                     }
                     .skills {
                       display: flex;
-                      width: 50%;
+                      width: 62%;
                       flex-direction: row;
-                      border: 1px solid;
+                      // border: 1px solid;
                       height: 100%;
                       flex-wrap: wrap;
                       text-align: center;
-                      justify-content: space-around;
+                      justify-content: space-between;
 
                       li {
-                        // border: 1px solid;
-                        justify-content: right;
-                        width: 30%;
+                        justify-content: center;
+                        width: 44%;
                         height: 100%;
+                        border-radius: 1rem;
+                        // border: 1px solid;
+                      }
+                      .html {
+                        background: rgba(255, 166, 0, 0.5);
+                      }
+                      .css {
+                        background: rgba(0, 0, 255, 0.5);
+                      }
+                      .js {
+                        background: rgba(255, 255, 0, 0.5);
+                      }
+                      .react {
+                        background: rgba(135, 207, 235, 0.5);
+                      }
+                      .scss {
+                        background: rgba(255, 105, 180, 0.5);
+                      }
+                      .node {
+                        background: rgba(0, 128, 0, 0.5);
+                      }
+                      .spring {
+                        background: rgba(144, 238, 144, 0.5);
+                      }
+                      .mysql {
+                        background: rgba(255, 127, 80, 0.5);
                       }
                     }
                   }
                 }
                 .bottom_txt {
-                  border: 1px solid;
+                  // border: 1px solid;
                   width: 100%;
-                  height: 80%;
+                  height: 52%;
+                  overflow-y: scroll;
+
                   .introduce {
-                    margin-bottom: 12%;
+                    // margin-bottom: 8%;
                     transition: 0.5s all ease-in;
-                    padding-top: 8%;
+                    // padding-top: 4%;
                     height: 20%;
                   }
                   .detail_txt {
                     line-height: 1.8;
                     margin-top: 3%;
                     transition: 0.5s all ease;
-                    overflow-y: scroll;
+                    text-align: left;
                   }
                 }
               }

@@ -1,6 +1,7 @@
 import React from "react";
 import mainImg from "../img/Profile_img.jpg";
 import "../style/Profile.scss";
+import { Link } from "react-scroll";
 
 export default function Profile() {
   return (
@@ -82,6 +83,17 @@ export default function Profile() {
             </div>
           </div>
         </div>
+        <Link
+          to="available"
+          spy={true}
+          smooth={true}
+          offset={5}
+          duration={1000}
+        >
+          <div class="arrows">
+            <span></span>
+          </div>
+        </Link>
       </div>
     </div>
   );

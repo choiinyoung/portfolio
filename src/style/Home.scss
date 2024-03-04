@@ -15,14 +15,13 @@
   font-weight: normal;
   font-style: normal;
 }
-// $black: #2a2927;
-// $white: #fff;
-// $bg: #fbf6e6;
-// $face: #fdda5f;
-// $face-shadow: #fd9744;
-// $main-width: 12vw;
-// $main-height: 24vh;
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 $bg: #e6e2df;
+$target: #fff;
+$size: 80px;
+$speed: 3s;
+$peakopacity: 0.7;
 
 * {
   box-sizing: border-box;
@@ -34,108 +33,151 @@ $bg: #e6e2df;
 .all {
   // border: 1px solid orange;
   width: 100%;
-  height: 100%;
-  .bg-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -2;
-    overflow: hidden;
-  }
+  height: 110vh;
+  // .bg-video {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   overflow: hidden;
+  //   z-index: -2;
+  //   overflow: hidden;
+  // }
   .home {
-    width: 100%;
-    // border: 1px solid;
+    width: 90%;
+    border: 1px solid;
     margin: 0 auto;
-    height: 110vh;
+    height: 100%;
     position: relative;
     // background: black;
     overflow: hidden;
+    font-family: "Righteous", serif;
 
     .wrapper {
       width: 100%;
-      // font-family: "Source Code Pro", monospace;
-      margin: 0 auto;
+      margin: 5% auto;
+      height: 80%;
       height: 100%;
+      .title {
+        top: 9%;
+        // border: 1px solid;
+        width: 65%;
+        font-size: 3vw;
+        position: relative;
+        margin: 11% auto;
+        .right {
+          position: absolute;
+          right: 2%;
+        }
+      }
 
+      .name {
+        // border: 1px solid;
+        position: relative;
+        // /* margin: 0px auto; */
+        width: 23%;
+        font-size: 9vh;
+        display: flex;
+        justify-content: space-between;
+        left: 8%;
+        top: 4%;
+        -webkit-text-stroke: 2px rgba(0, 0, 0, 0.456);
+        color: rgba(255, 255, 255, 0.126);
+        // color: white;
+
+        h2 {
+          position: absolute;
+        }
+      }
       h1 {
-        text-transform: uppercase;
-        transform: translate(-50%, -50%) skew(10deg) rotate(-10deg);
-        font-size: 10vw;
-        top: 35%;
-        left: 47%;
-        margin: 0;
+        color: white;
+        font-size: 11em;
+        text-shadow: 0.03em 0.03em 0 hsl(309, 26%, 63%);
+        /* top: 8%; */
+        position: relative;
+        // border: 1px solid;
+        /* left: 6%; */
+        width: 89%;
+        margin: 1% auto;
+      }
+      .right {
+        // border: 1px solid black;
+        width: 54%;
+        right: -13%;
+        top: -9%;
+      }
+      h1:after {
+        content: attr(data-shadow);
         position: absolute;
-        text-rendering: optimizeLegibility;
-        font-weight: 900;
-        color: rgba(#ff9eb1, 0.5);
-        text-shadow: 1px 4px 6px $bg, 0 0 0 #66303a, 1px 4px 6px $bg;
-        white-space: nowrap;
+        top: 0.06em;
+        left: 0.06em;
+        z-index: -1;
+        text-shadow: none;
+        background-image: linear-gradient(
+          45deg,
+          transparent 45%,
+          hsla(48, 20%, 90%, 1) 45%,
+          rgb(81, 80, 73) 55%,
+          transparent 0
+        );
+        background-size: 0.05em 0.05em;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-        &:before {
-          content: attr(data-heading);
-          position: absolute;
-          left: -0.7%;
-          top: -4.8%;
-          overflow: hidden;
-          width: 100%;
-          height: 50%;
-          color: #fbf7f4;
-          transform: translate(1.6vw, 0) skew(-13deg) scale(1, 1.2);
-          z-index: 2;
-          text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
+        animation: shad-anim 15s linear infinite;
+      }
+
+      @keyframes shad-anim {
+        0% {
+          background-position: 0 0;
         }
-
-        &:after {
-          content: attr(data-heading);
-          position: absolute;
-          left: 0;
-          top: 0;
-          overflow: hidden;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          color: #d3cfcc;
-          transform: translate(0vw, 0) skew(13deg) scale(1, 0.8);
-          clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-          text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.3);
+        0% {
+          background-position: 100% -100%;
         }
       }
-      .txt2 {
-        top: 60%;
-        left: 67%;
-        &:before {
-          left: -0.9%;
-        }
-      }
+
+      // h1 {
+      //   text-transform: uppercase;
+      //   transform: translate(-50%, -50%) skew(10deg) rotate(-10deg);
+      //   font-size: 10vw;
+      //   top: 35%;
+      //   left: 47%;
+      //   margin: 0;
+      //   position: absolute;
+      //   text-rendering: optimizeLegibility;
+      //   font-weight: 900;
+      //   color: rgba(#ff9eb1, 0.5);
+      //   text-shadow: 1px 4px 6px $bg, 0 0 0 #66303a, 1px 4px 6px $bg;
+      //   white-space: nowrap;
+
+      //   &:before {
+      //     content: attr(data-heading);
+      //     position: absolute;
+      //     left: -0.7%;
+      //     top: -4.8%;
+      //     overflow: hidden;
+      //     width: 100%;
+      //     height: 50%;
+      //     color: #fbf7f4;
+      //     transform: translate(1.6vw, 0) skew(-13deg) scale(1, 1.2);
+      //     z-index: 2;
+      //     text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
+      //   }
+
+      //   &:after {
+      //     content: attr(data-heading);
+      //     position: absolute;
+      //     left: 0;
+      //     top: 0;
+      //     overflow: hidden;
+      //     width: 100%;
+      //     height: 100%;
+      //     z-index: 1;
+      //     color: #d3cfcc;
+      //     transform: translate(0vw, 0) skew(13deg) scale(1, 0.8);
+      //     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+      //     text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.3);
+      //   }
+      // }
     }
   }
 }
-// #container {
-//   @include center;
-//   width: 12vw;
-//   height: 23vh;
-//   top: 47%;
-//   position: relative;
-//   left: 82%;
-// }
-
-// @keyframes eyeBlink {
-//   0%,
-//   30%,
-//   36%,
-//   100% {
-//     transform: scale(1);
-//   }
-//   32%,
-//   34% {
-//     transform: scale(1, 0);
-//   }
-// }
-// }
-
-// body {
-//   background: linear-gradient(45deg, $bg 80%, #c2c1bd 100%);
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }

@@ -37,9 +37,9 @@ export default function Available() {
   return (
     <>
       <div className="available">
-        <div className="title">Available</div>
-
         <div className="all">
+          <div className="title">Available</div>
+
           <div className="btn">
             <label
               ref={labelsRef.Front}

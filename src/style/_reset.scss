@@ -52,5 +52,57 @@ body {
   position: absolute;
   // font-weight: bold;
   font-size: 5vh;
-  top: 9%;
+  top: 4%;
+}
+.arrows {
+  // padding-top: 70px;
+  position: relative;
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #000;
+  // border: 1px solid;
+  width: 15%;
+  height: 10%;
+  margin: -2% auto;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    /* top: 0; */
+    left: 38%;
+    width: 36%;
+    height: 95%;
+    margin-left: -12px;
+    border-left: 0.5vh solid darkgray;
+    border-bottom: 0.5vh solid darkgray;
+    transform: rotate(-45deg);
+    animation: arrow 1.5s infinite;
+    box-sizing: border-box;
+  }
+  @keyframes arrow {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+    transition: width 0.3s ease;
+  }
+  &:hover .fill {
+    width: 100%;
+  }
 }
