@@ -18,10 +18,9 @@ export default function Portfolio1() {
     useRef(null),
     useRef(null),
     useRef(null),
-    useRef(null),
   ];
 
-  const [cellCount] = useState(6);
+  const [cellCount] = useState(5);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -91,7 +90,7 @@ export default function Portfolio1() {
                   </div>
                 </div>
                 <div className="txt">
-                  <h2>HomePage Renewal1</h2>
+                  <h2>Musinsa Renewal</h2>
 
                   <div className="detail">
                     <ul>
@@ -101,9 +100,9 @@ export default function Portfolio1() {
                           Skills
                         </div>
                         <ul className="skills">
-                          <li className="react">React</li>
-
-                          <li className="scss">SCSS</li>
+                          <li className="html">HTML</li>
+                          <li className="css">CSS</li>
+                          <li className="js">JS</li>
                         </ul>
                       </li>
                       <li>
@@ -111,13 +110,13 @@ export default function Portfolio1() {
                           <FontAwesomeIcon icon={faCalendar} />
                           진행 기간
                         </div>
-                        <p>2023.11.20 ~ 2023.12.28</p>
+                        <p>2023.11.15 ~ 2023.12.10</p>
                       </li>
                       <li>
                         <div className="content_title">
                           <FontAwesomeIcon icon={faPeopleGroup} />팀 구성
                         </div>
-                        <p>Front-end & Web Design 1</p>
+                        <p>Web Design & Publisher 2</p>
                       </li>
                     </ul>
                     <div className="bottom_txt">
@@ -125,12 +124,13 @@ export default function Portfolio1() {
                         <div className="content_title">
                           <p>💡&nbsp; 소개</p>
                         </div>
-                        <p className="detail_txt ">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Ipsam totam voluptatibus quod architecto,
-                          dolores maiores, recusandae suscipit et sequi eos
-                          molestiae, quaerat velit. Perspiciatis corrupti,
-                          nostrum excepturi ratione blanditiis id!
+                        <p className="detail_txt">
+                          모바일 무신사 디자인은 깔끔하고 사용자가 보기 편하게
+                          잘 디자인 되어있지만
+                          <br />
+                          웹사이트로 본 무신사는 제품들과 관련 프로모션등이
+                          <br />
+                          복잡하고 한눈에 보기 힘들어 리뉴얼 하게 되었다.
                         </p>
                       </div>
                     </div>
@@ -209,66 +209,6 @@ export default function Portfolio1() {
                   </div>
                 </div>
                 <div className="txt">
-                  <h2>Musinsa Renewal</h2>
-
-                  <div className="detail">
-                    <ul>
-                      <li>
-                        <div className="content_title">
-                          <FontAwesomeIcon icon={faGears} />
-                          Skills
-                        </div>
-                        <ul className="skills">
-                          <li className="html">HTML</li>
-                          <li className="css">CSS</li>
-                          <li className="js">JS</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <div className="content_title">
-                          <FontAwesomeIcon icon={faCalendar} />
-                          진행 기간
-                        </div>
-                        <p>2023.11.15 ~ 2023.12.10</p>
-                      </li>
-                      <li>
-                        <div className="content_title">
-                          <FontAwesomeIcon icon={faPeopleGroup} />팀 구성
-                        </div>
-                        <p>Web Design & Publisher 2</p>
-                      </li>
-                    </ul>
-                    <div className="bottom_txt">
-                      <div className="introduce">
-                        <div className="content_title">
-                          <p>💡&nbsp; 소개</p>
-                        </div>
-                        <p className="detail_txt">
-                          모바일 무신사 디자인은 깔끔하고 사용자가 보기 편하게
-                          잘 디자인 되어있지만
-                          <br />
-                          웹사이트로 본 무신사는 제품들과 관련 프로모션등이
-                          <br />
-                          복잡하고 한눈에 보기 힘들어 리뉴얼 하게 되었다.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="face4">
-            <div class="inner" ref={innerRefs[3]}>
-              <div className="controll">
-                <div className="left">
-                  <div className="vid">사진</div>
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faLink} />
-                  </div>
-                </div>
-                <div className="txt">
                   <h2>Sharing</h2>
 
                   <div className="detail">
@@ -338,8 +278,8 @@ export default function Portfolio1() {
               </div>
             </div>
           </article>
-          <article class="face5">
-            <div class="inner" ref={innerRefs[4]}>
+          <article class="face4">
+            <div class="inner" ref={innerRefs[3]}>
               <div className="controll">
                 <div className="left">
                   <div className="vid">사진</div>
@@ -395,8 +335,8 @@ export default function Portfolio1() {
               </div>
             </div>
           </article>
-          <article class="face6">
-            <div class="inner" ref={innerRefs[5]}>
+          <article class="face5">
+            <div class="inner" ref={innerRefs[4]}>
               <div className="controll">
                 <div className="left">
                   <div className="vid">사진</div>
