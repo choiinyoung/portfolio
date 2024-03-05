@@ -77,7 +77,7 @@ export default function Portfolio1() {
 
   return (
     <div className="portfolio1">
-      <div id="wrap">
+      <div className="all">
         <div className="title">Portfolio</div>
         <section id="circle" ref={carouselRef}>
           <article class="face1">

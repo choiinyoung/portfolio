@@ -55,13 +55,13 @@
     cursor: pointer;
   }
 
-  #wrap {
+  .all {
     position: relative;
     width: 100%;
     height: 78%;
     // perspective: 60000px;
     // border: 1px solid red;
-    top: 10%;
+    top: 5%;
 
     #circle {
       width: 55%;
@@ -203,11 +203,23 @@
                   height: 52%;
                   overflow-y: scroll;
 
+                  &::-webkit-scrollbar {
+                    width: 0.5rem;
+                    border-radius: 0 0 2rem 2rem;
+                  }
+                  &::-webkit-scrollbar-thumb {
+                    border-radius: 0.125rem;
+                    background-color: gray;
+                  }
                   .introduce {
                     // margin-bottom: 8%;
                     transition: 0.5s all ease-in;
                     // padding-top: 4%;
                     height: 20%;
+                    &::-webkit-scrollbar-track {
+                      border-radius: 10px;
+                      background-color: rgb(187, 25, 25);
+                    }
                   }
                   .detail_txt {
                     line-height: 1.8;

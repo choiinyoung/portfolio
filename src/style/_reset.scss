@@ -5,9 +5,10 @@ $gradiant: linear-gradient(
   rgba(238, 174, 202, 0.5) 50%,
   rgba(148, 187, 233, 0.5) 100%
 );
-.notosanskr * {
-  font-family: "Noto Sans KR", sans-serif;
-}
+// .notosanskr * {
+//   font-family: "Noto Sans KR", sans-serif;
+// }
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 * {
   margin: 0;
@@ -51,8 +52,9 @@ body {
 .title {
   position: absolute;
   // font-weight: bold;
-  font-size: 5vh;
+  font-size: 6vh;
   top: 4%;
+  font-family: "Righteous", serif;
 }
 .arrows {
   // padding-top: 70px;

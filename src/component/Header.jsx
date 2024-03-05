@@ -26,7 +26,7 @@ export default function Header() {
             to="profile"
             spy={true}
             smooth={true}
-            offset={45}
+            offset={5}
             duration={1000}
           >
             <FontAwesomeIcon icon={faUser} />
@@ -37,7 +37,7 @@ export default function Header() {
             to="available"
             spy={true}
             smooth={true}
-            offset={48}
+            offset={5}
             duration={1000}
           >
             <FontAwesomeIcon icon={faCode} />
@@ -48,7 +48,7 @@ export default function Header() {
             to="portfolio1"
             spy={true}
             smooth={true}
-            offset={49}
+            offset={5}
             duration={1000}
           >
             <FontAwesomeIcon icon={faFileCode} />

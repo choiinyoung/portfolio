@@ -26,7 +26,6 @@ export default function Profile() {
             <div className="education">
               <div className="edu_all">
                 <h2>[ Education ]</h2>
-                <div className="line"></div>
                 <ul>
                   <li>
                     <p>2023.11 ~</p>
@@ -34,7 +33,7 @@ export default function Profile() {
                   </li>
                   <li>
                     <p>2023.01 ~ 2023.04</p>
-                    <p>POSCO X 코딩온 풀스택 개발자 부트캠프 수료</p>
+                    <p>POSCO X 코딩온 풀스택 부트캠프 수료</p>
                   </li>
                   <li>
                     <p>2018.03 ~ 2023.02</p>
