@@ -3,7 +3,6 @@ import "../style/available.scss";
 import Front from "./Availavle/Front";
 import Etc from "./Availavle/Etc";
 import Tool from "./Availavle/Tool";
-import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 
 export default function Available() {
