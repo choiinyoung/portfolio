@@ -88,7 +88,6 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="fill"></div>
         </div>
       </div>
     </>
