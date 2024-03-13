@@ -6,7 +6,7 @@ import Home from "./component/Home";
 import Portfolio1 from "./component/Portfolio1";
 import Portfolio2 from "./component/Portfolio2";
 import Profile from "./component/Profile";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   // const [currentInputs, setCurrentInputs] = useState({
@@ -78,16 +78,14 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Header />
-        <div className="slider">
-          <Home />
-          <Profile />
-          <Available />
-          <Portfolio1 />
-          {/* <Portfolio2 /> */}
-        </div>
-      </BrowserRouter>
+      <Header />
+      <div className="slider">
+        <Home />
+        <Profile />
+        <Available />
+        <Portfolio1 />
+        {/* <Portfolio2 /> */}
+      </div>
     </>
   );
 }

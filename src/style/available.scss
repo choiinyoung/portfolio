@@ -242,7 +242,7 @@ $tool-shadow-color: #8c2022;
           font-size: 1.5vw;
           box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.4);
           cursor: pointer;
-          width: 65%;
+          width: 55%;
           height: 10vh;
           text-align: center;
           line-height: 10vh;
@@ -328,7 +328,7 @@ $tool-shadow-color: #8c2022;
         // border: 1px solid;
         width: 65%;
         .controll {
-          width: 80%;
+          width: 75%;
           height: 91%;
           // border: 1px solid blue;
           position: relative;
@@ -340,7 +340,7 @@ $tool-shadow-color: #8c2022;
             border-radius: 2rem 2rem 0 0;
             background: lightgray;
             ul {
-              width: 18%;
+              width: 20%;
               // border: 1px solid;
               height: 45%;
               top: 30%;
@@ -410,6 +410,7 @@ $tool-shadow-color: #8c2022;
                     height: 100%;
                     padding: 5%;
                     text-align: center;
+                    justify-content: space-around;
                     .img {
                       // border: 1px solid;
                       width: 20%;
@@ -429,7 +430,7 @@ $tool-shadow-color: #8c2022;
 
     .arrows {
       position: absolute;
-      top: 68%;
+      top: 77%;
       left: 42%;
     }
   }

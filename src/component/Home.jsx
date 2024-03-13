@@ -57,6 +57,7 @@ export default function Home() {
               </motion.div>
             </div>
             <motion.div
+              className="txt_box"
               animate={{
                 opacity: [0, 1],
               }}

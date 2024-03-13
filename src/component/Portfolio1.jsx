@@ -85,8 +85,18 @@ export default function Portfolio1() {
                 <div className="left">
                   <div className="vid">사진</div>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faLink} />
+                    <a
+                      href="https://choiinyoung.github.io/musinsa_renewal/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a
+                      href="https://choiinyoung.github.io/musinsa_renewal/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
                   </div>
                 </div>
                 <div className="txt">
@@ -145,8 +155,18 @@ export default function Portfolio1() {
                 <div className="left">
                   <div className="vid">사진</div>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faLink} />
+                    <a
+                      href="https://github.com/Sung-Heee/store-front"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a
+                      href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24?pvs=4"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
                   </div>
                 </div>
                 <div className="txt">
@@ -204,8 +224,18 @@ export default function Portfolio1() {
                 <div className="left">
                   <div className="vid">사진</div>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faLink} />
+                    <a
+                      href="https://github.com/Sung-Heee/store-front"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a
+                      href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24?pvs=4"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
                   </div>
                 </div>
                 <div className="txt">
@@ -284,8 +314,18 @@ export default function Portfolio1() {
                 <div className="left">
                   <div className="vid">사진</div>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faLink} />
+                    <a
+                      href="https://github.com/Sung-Heee/store-front"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a
+                      href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24?pvs=4"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
                   </div>
                 </div>
                 <div className="txt">
