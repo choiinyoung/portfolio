@@ -8,8 +8,9 @@ import {
   faPeopleGroup,
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faReadme } from "@fortawesome/free-brands-svg-icons";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import musinsa from "../img/musinsa.mp4";
 export default function Portfolio1() {
   const carouselRef = useRef(null);
   const innerRefs = [
@@ -39,31 +40,31 @@ export default function Portfolio1() {
       innerRefs[selectedIndex].current.classList.add("scale_on");
     };
 
-    // let intervalId;
+    let intervalId;
 
-    // const startInterval = () => {
-    //   intervalId = setInterval(() => {
-    //     handleNextClick();
-    //   }, 5000); // 5초마다 자동으로 넘김
-    // };
+    const startInterval = () => {
+      intervalId = setInterval(() => {
+        handleNextClick();
+      }, 5000); // 5초마다 자동으로 넘김
+    };
 
-    // const stopInterval = () => {
-    //   clearInterval(intervalId);
-    // };
+    const stopInterval = () => {
+      clearInterval(intervalId);
+    };
 
     rotateCarousel();
-    // startInterval();
+    startInterval();
 
-    // const carousel = carouselRef.current;
+    const carousel = carouselRef.current;
 
-    // carousel.addEventListener("mouseenter", stopInterval);
-    // carousel.addEventListener("mouseleave", startInterval);
+    carousel.addEventListener("mouseenter", stopInterval);
+    carousel.addEventListener("mouseleave", startInterval);
 
-    // return () => {
-    //   clearInterval(intervalId);
-    //   carousel.removeEventListener("mouseenter", stopInterval);
-    //   carousel.removeEventListener("mouseleave", startInterval);
-    // };
+    return () => {
+      clearInterval(intervalId);
+      carousel.removeEventListener("mouseenter", stopInterval);
+      carousel.removeEventListener("mouseleave", startInterval);
+    };
   }, [selectedIndex]);
 
   const handlePrevClick = () => {
@@ -83,13 +84,17 @@ export default function Portfolio1() {
             <div class="inner" ref={innerRefs[0]}>
               <div className="controll">
                 <div className="left">
-                  <div className="vid">사진</div>
+                  <div className="vid">
+                    <video className="bg_content" autoPlay loop muted>
+                      <source src={musinsa} type="video/mp4" />
+                    </video>
+                  </div>
                   <div className="icon">
                     <a
-                      href="https://choiinyoung.github.io/musinsa_renewal/"
+                      href="https://www.notion.so/Musinsa_renewal-daf68dfe98b841a18eb9dc598d9bb070"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FontAwesomeIcon icon={faReadme} />
                     </a>
                     <a
                       href="https://choiinyoung.github.io/musinsa_renewal/"
@@ -135,12 +140,19 @@ export default function Portfolio1() {
                           <p>💡&nbsp; 소개</p>
                         </div>
                         <p className="detail_txt">
-                          모바일 무신사 디자인은 깔끔하고 사용자가 보기 편하게
-                          잘 디자인 되어있지만
+                          모바일 무신사는 깔끔하고 사용자가
                           <br />
-                          웹사이트로 본 무신사는 제품들과 관련 프로모션등이
+                          편리하게 이용할 수 있는 디자인으로 구성되어 있습니다.
                           <br />
-                          복잡하고 한눈에 보기 힘들어 리뉴얼 하게 되었다.
+                          하지만 홈페이지에서는 제품 및 프로모션 정보가
+                          <br />
+                          복잡하게 표시되어 있어 사용자들이
+                          <br />
+                          한눈에 파악하기 어려운 문제가 있었습니다.
+                          <br />
+                          이에 따라 홈페이지를 리뉴얼하여 사용자 경험을 개선하고
+                          <br />
+                          효과적으로 활용할 수 있도록 하였습니다.
                         </p>
                       </div>
                     </div>
@@ -159,7 +171,7 @@ export default function Portfolio1() {
                       href="https://github.com/Sung-Heee/store-front"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FontAwesomeIcon icon={faReadme} />
                     </a>
                     <a
                       href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24?pvs=4"
@@ -225,13 +237,13 @@ export default function Portfolio1() {
                   <div className="vid">사진</div>
                   <div className="icon">
                     <a
-                      href="https://github.com/Sung-Heee/store-front"
+                      href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FontAwesomeIcon icon={faReadme} />
                     </a>
                     <a
-                      href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24?pvs=4"
+                      href="https://github.com/jeong-hyuk/sharing-frontend"
                       target="_blank"
                     >
                       <FontAwesomeIcon icon={faLink} />
@@ -284,22 +296,25 @@ export default function Portfolio1() {
                           {/* <FontAwesomeIcon icon={chevronIcon.Intr4} /> */}
                         </div>
                         <p className="detail_txt ">
-                          물건관리대여홈페이지로 사용자모드와 관리자모드로 총
-                          2가지를 만들었습니다
+                          학교 내에서 종이 서류에는 존재하는 것으로 표시되지만
                           <br />
-                          사용자모드에서는 어떤 물건들이 대여 가능한지,
+                          실제로 찾아보면 없는 경우가 빈번히 발생하여
                           <br />
-                          내가 현재 어떤 물건을 대여했는지 확인여부와
+                          분실 및 도난이 이슈가 되었습니다.
                           <br />
-                          최신 공지사항을 확인 할 수 있습니다
+                          이를 위해 기자재를 효과적으로 관리하기 위해
                           <br />
-                          사용자모드에는 물건을 등록하거나 삭제할 수 있고
-                          대여신청이 들어온 물건을 볼 수 있고
+                          사용자와 관리자 모드로 구성하여
                           <br />
-                          그에 대한 승인을 할 수 있습니다.
+                          프로젝트를 진행하였습니다.
                           <br />
-                          또한 공지사항에 글을 작성할 수 있고 물건들의 대여
-                          기록을 볼 수 있습니다
+                          사용자 모드에서는 대여 가능한 물건 확인,
+                          <br />
+                          대여 중인 물건 확인, 최신 공지사항 확인이 가능하며
+                          <br />
+                          관리자 모드는 물건 등록/삭제, 대여 신청 처리,
+                          <br />
+                          공지사항 작성, 대여 기록 확인이 가능하게 하였습니다.
                         </p>
                       </div>
                     </div>
@@ -315,13 +330,14 @@ export default function Portfolio1() {
                   <div className="vid">사진</div>
                   <div className="icon">
                     <a
-                      href="https://github.com/Sung-Heee/store-front"
+                      href="https://www.notion.so/Re-Used-5707da2cb849402b8f7510d4825a8cba"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FontAwesomeIcon icon={faReadme} />
                     </a>
+
                     <a
-                      href="https://www.notion.so/Sharing-bf0e3f0c1bf9440e97bceece60277b24?pvs=4"
+                      href="https://github.com/Sung-Heee/store-front"
                       target="_blank"
                     >
                       <FontAwesomeIcon icon={faLink} />
@@ -381,8 +397,18 @@ export default function Portfolio1() {
                 <div className="left">
                   <div className="vid">사진</div>
                   <div className="icon">
-                    <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faLink} />
+                    <a
+                      href="https://www.notion.so/Portfolio-8e7595f099d946e9a4815da0757a7932"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faReadme} />
+                    </a>
+                    <a
+                      href="https://choiinyoung.github.io/portfolio/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
                   </div>
                 </div>
                 <div className="txt">
