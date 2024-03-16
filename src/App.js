@@ -6,6 +6,7 @@ import Home from "./component/Home";
 import Portfolio1 from "./component/Portfolio1";
 import Portfolio2 from "./component/Portfolio2";
 import Profile from "./component/Profile";
+import Footer from "./component/Footer";
 import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
         <Available />
         <Portfolio1 />
         {/* <Portfolio2 /> */}
+        <Footer />
       </div>
     </>
   );
