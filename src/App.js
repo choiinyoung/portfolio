@@ -8,8 +8,10 @@ import Portfolio2 from "./component/Portfolio2";
 import Profile from "./component/Profile";
 import Footer from "./component/Footer";
 import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
+import Ready from "./component/Ready";
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // const [currentInputs, setCurrentInputs] = useState({
   //   currentWindowHeight: window.innerHeight,
   //   currentPage: 0,
@@ -76,18 +78,35 @@ function App() {
   //     window.removeEventListener("wheel", handleWheel);
   //   };
   // }, [currentInputs]);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
-      <Header />
-      <div className="slider">
-        <Home />
-        <Profile />
-        <Available />
-        <Portfolio1 />
-        {/* <Portfolio2 /> */}
-        <Footer />
-      </div>
+      {windowWidth <= 1023 ? (
+        <Ready /> // 화면 너비가 1023 이하일 때 Ready 컴포넌트를 렌더링
+      ) : (
+        <>
+          <Header />
+          <div className="slider">
+            <Home />
+            <Profile />
+            <Available />
+            <Portfolio1 />
+            {/* <Portfolio2 /> */}
+            <Footer />
+          </div>
+        </>
+      )}
     </>
   );
 }

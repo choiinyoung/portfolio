@@ -45,8 +45,6 @@ export default function Available() {
     <>
       <div className="available">
         <div className="all">
-          <div className="title">Available</div>
-
           <div className="all_controllor">
             <div className="btn">
               <ul>
