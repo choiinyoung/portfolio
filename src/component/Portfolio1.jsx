@@ -13,6 +13,7 @@ import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import musinsa from "../img/musinsa.mp4";
 import sharing from "../img/sharing.mp4";
 import re_used from "../img/re_used.mp4";
+import { Link } from "react-scroll";
 
 export default function Portfolio1() {
   const carouselRef = useRef(null);
@@ -682,6 +683,11 @@ export default function Portfolio1() {
           <li>!</li>
         </ul>
       </div>
+      <Link to="contact" spy={true} smooth={true} offset={5} duration={1000}>
+        <div class="arrows">
+          <span></span>
+        </div>
+      </Link>
     </div>
   );
 }
