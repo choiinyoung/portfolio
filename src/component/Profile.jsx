@@ -10,7 +10,6 @@ export default function Profile() {
       <div class="wave"></div>
       <div class="wave"></div>
       <div className="all">
-        <div className="title">Profile</div>
         <div className="all_controller">
           <div className="main">
             <div className="img">
@@ -68,15 +67,13 @@ export default function Profile() {
                 <h2>[ About Me ]</h2>
                 <div className="line"></div>
                 <p>
-                  기술적인 역량 뿐만 아니라, 사람과의 원활한 의사소통을
-                  중요시하며
-                  <br></br>
-                  어려움 없이 협업이 가능한 팀 플레이어로 성장하고 있습니다.
-                  <br></br>
-                  뿐만 아니라, 트렌드에 민감하게 반응하여 끊임없이 새로운 기술과
-                  동향을 습득하고
-                  <br></br>
-                  적용하는 데에 큰 흥미를 느끼고 있습니다.
+                  저는 호기심이 많고 도전을 즐기는 성격으로, 제가 디자인하고
+                  학습한 내용이 화면에 바로 구현되는 것에 즐거워 웹 개발 분야에
+                  흥미를 느끼게 되었습니다.
+                  <br />
+                  또한, 사람들과의 원활한 의사소통을 중요하게 생각하며 기술적
+                  역량 뿐만 아니라 팀원들과 어려움 없이 협업할 수 있는 팀
+                  플레이어로 성장하고 있습니다.
                 </p>
               </div>
             </div>
