@@ -6,6 +6,7 @@ export default function Ready() {
     margin: "34% auto",
     fontSize: "3vw",
     textAlign: "center",
+    height: "50vh",
   };
 
   return (
