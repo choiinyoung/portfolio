@@ -27,7 +27,7 @@ export default function Profile() {
                 <h2>[ Education ]</h2>
                 <ul>
                   <li>
-                    <p>2023.11 ~</p>
+                    <p>2023.11 ~ 2024.03</p>
                     <p>인천IT직업전문학원 UI&UX 양성과정</p>
                   </li>
                   <li>

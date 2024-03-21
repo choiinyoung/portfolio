@@ -7,7 +7,6 @@ import {
   faUser,
   faCode,
   faFileCode,
-  faPenNib,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
