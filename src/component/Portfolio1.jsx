@@ -13,10 +13,15 @@ import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import musinsa from "../img/musinsa.mp4";
 import sharing from "../img/sharing.mp4";
 import re_used from "../img/re_used.mp4";
+import rollex from "../img/rollex.mp4";
+import portfolio from "../img/portfolio.mp4";
 import { Link } from "react-scroll";
 
 export default function Portfolio1() {
+  // face를 돌리기 위해 사용
   const carouselRef = useRef(null);
+
+  // scale class 추가 및 삭제에 사용
   const innerRefs = [
     useRef(null),
     useRef(null),
@@ -29,6 +34,7 @@ export default function Portfolio1() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
+    // circle를 돌리기 위해
     const rotateCarousel = () => {
       const angle = (selectedIndex / cellCount) * -360;
       carouselRef.current.style.transform = `translateZ(-700px) rotateY(${angle}deg)`;
@@ -46,12 +52,14 @@ export default function Portfolio1() {
 
     let intervalId;
 
+    // 타이머 시작
     const startInterval = () => {
       intervalId = setInterval(() => {
         handleNextClick();
       }, 5000); // 5초마다 자동으로 넘김
     };
 
+    // 타이머 멈춤
     const stopInterval = () => {
       clearInterval(intervalId);
     };
@@ -61,22 +69,27 @@ export default function Portfolio1() {
 
     const carousel = carouselRef.current;
 
+    // 마우스가 캐러셀에 들어올때 멈춤
     carousel.addEventListener("mouseenter", stopInterval);
+    // 마우스가 떠나면 다시 시작
     carousel.addEventListener("mouseleave", startInterval);
 
     return () => {
+      // 계속 반복하기 위해
       clearInterval(intervalId);
       carousel.removeEventListener("mouseenter", stopInterval);
       carousel.removeEventListener("mouseleave", startInterval);
     };
   }, [selectedIndex]);
 
+  // 이전 버튼
   const handlePrevClick = () => {
-    setSelectedIndex((prevIndex) => (prevIndex - 1 + cellCount) % cellCount);
+    setSelectedIndex((index) => (index - 1 + cellCount) % cellCount);
   };
 
+  // 다음 버튼
   const handleNextClick = () => {
-    setSelectedIndex((prevIndex) => (prevIndex + 1) % cellCount);
+    setSelectedIndex((index) => (index + 1) % cellCount);
   };
 
   return (
@@ -165,10 +178,14 @@ export default function Portfolio1() {
           <article class="face2">
             <div class="inner" ref={innerRefs[1]}>
               <div className="controll">
-                <h2>HomePage Renewal2</h2>
+                <h2>Rolex</h2>
                 <div className="content">
                   <div className="left">
-                    <div className="vid">사진</div>
+                    <div className="vid">
+                      <video className="bg_content" autoPlay loop muted>
+                        <source src={rollex} type="video/mp4" />
+                      </video>
+                    </div>
                     <ul className="list">
                       <li>
                         <div className="content_title">
@@ -176,9 +193,9 @@ export default function Portfolio1() {
                           Skills
                         </div>
                         <ul className="skills">
-                          <li className="react">React</li>
-
+                          <li className="html">HTML</li>
                           <li className="scss">SCSS</li>
+                          <li className="js">JS</li>
                         </ul>
                       </li>
                       <li>
@@ -192,7 +209,7 @@ export default function Portfolio1() {
                         <div className="content_title">
                           <FontAwesomeIcon icon={faPeopleGroup} />팀 구성
                         </div>
-                        <p>Front-end & Web Design 1</p>
+                        <p>Web Design & Publisher 1</p>
                       </li>
                     </ul>
                   </div>
@@ -202,20 +219,35 @@ export default function Portfolio1() {
                         <p>💡&nbsp; 소개</p>
                       </div>
                       <p className="detail_txt">
-                        모바일 무신사는 깔끔하고 사용자가
+                        HTML, SCSS, JS를 활용하여 롤렉스 홈페이지를 제작하였으며
+                        JS를 이용하여 애니메이션과 counterUp 라이브러리를
+                        활용하여 자동 카운트 기능을 구현하였습니다.
                         <br />
-                        편리하게 이용할 수 있는 디자인으로 구성되어 있습니다.
-                        <br />
-                        하지만 홈페이지에서는 제품 및 프로모션 정보가
-                        <br />
-                        복잡하게 표시되어 있어 사용자들이
-                        <br />
-                        한눈에 파악하기 어려운 문제가 있었습니다.
-                        <br />
-                        이에 따라 홈페이지를 리뉴얼하여 사용자 경험을 개선하고
-                        <br />
-                        효과적으로 활용할 수 있도록 하였습니다.
+                        또한, PC, 테블릿, 모바일 버전을 만들어 반응형으로
+                        구성하여 사용자의 다양한 환경에서 쉽게 이용할 수 있도록
+                        했습니다.
                       </p>
+
+                      <div className="tip">
+                        자세한 설명을 원하시면 Readme를 눌러주세요 !
+                      </div>
+                    </div>
+                    <div className="icon">
+                      <a
+                        href="https://www.notion.so/Rollex-2ef9633069dd42588bb43aa77866af33"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon icon={faReadme} />
+                        <div className="hover_txt">Read me</div>
+                      </a>
+
+                      <a
+                        href="https://verdant-bubblegum-a10584.netlify.app/"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon icon={faLink} />
+                        <div className="hover_txt">Link</div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -404,7 +436,13 @@ export default function Portfolio1() {
                 <h2>Portfolio</h2>
                 <div className="content">
                   <div className="left">
-                    <div className="vid">사진</div>
+                    <div className="vid">
+                      <div className="img">
+                        <video className="bg_content" autoPlay loop muted>
+                          <source src={portfolio} type="video/mp4" />
+                        </video>
+                      </div>
+                    </div>
                     <ul className="list">
                       <li>
                         <div className="content_title">
@@ -441,6 +479,14 @@ export default function Portfolio1() {
                       <p className="detail_txt">
                         저에 대한 내용과 지금까지 했던 포트폴리오를 정리하기
                         위해 제작하였습니다.
+                        <br />
+                        react-scroll을 사용하여 Header에 아이콘과 밑으로가는
+                        화살표를 클릭시 해당 페이지로 가게 하였으며 Carousel
+                        기능을 구현하여 여러 개의 프로젝트를 순환하며 볼 수
+                        있도록 했습니다.
+                        <br />
+                        또한 Footer에 emailjs를 사용하여 저에게 이메일을 보낼 수
+                        있게 하였습니다.
                         <br />
                       </p>
 

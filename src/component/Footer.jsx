@@ -5,7 +5,7 @@ import emailjs, { send } from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFileWord } from "@fortawesome/free-regular-svg-icons";
-import { faBlogger } from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
   const form = useRef();
 
@@ -39,28 +39,12 @@ export default function Footer() {
             <h2>CONTACT</h2>
             <form ref={form} onSubmit={sendEmail}>
               <div className="user">
-                <input
-                  type="text"
-                  name="name"
-                  id="user_name"
-                  placeholder="Name"
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  id="user_tel"
-                  placeholder="Phone"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="user_emil"
-                  placeholder="Email"
-                />
+                <input type="text" name="name" placeholder="Name" />
+                <input type="tel" name="phone" placeholder="Phone" />
+                <input type="email" name="email" placeholder="Email" />
               </div>
               <div className="msg">
                 <textarea
-                  id="message"
                   name="message"
                   cols="100"
                   // rows="12"
@@ -75,13 +59,17 @@ export default function Footer() {
           <div className="icon">
             <ul>
               <li>
-                <FontAwesomeIcon icon={faGithub} />
+                <a href="https://github.com/choiinyoung" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </li>
               <li>
-                <FontAwesomeIcon icon={faFileWord} />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faBlogger} />
+                <a
+                  href="https://www.notion.so/24485a9dbed94667bad7b896d77d1558"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faFileWord} />
+                </a>
               </li>
             </ul>
             <div className="txt">
