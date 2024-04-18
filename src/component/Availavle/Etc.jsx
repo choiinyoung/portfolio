@@ -48,7 +48,7 @@ export default function Etc() {
               </div>
               <div className="right">
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data1}
                   layout="vertical"
@@ -85,7 +85,7 @@ export default function Etc() {
               </div>
               <div className="right">
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data1}
                   layout="vertical"
@@ -124,7 +124,7 @@ export default function Etc() {
 
               <div className="right">
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data2}
                   layout="vertical"
@@ -162,7 +162,7 @@ export default function Etc() {
               </div>
               <div className="right">
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data2}
                   layout="vertical"

@@ -92,21 +92,21 @@ function App() {
 
   return (
     <>
-      {windowWidth <= 1023 ? (
+      {/* {windowWidth <= 1023 ? (
         <Ready /> // 화면 너비가 1023 이하일 때 Ready 컴포넌트를 렌더링
-      ) : (
-        <>
-          <Header />
-          <div className="slider">
-            <Home />
-            <Profile />
-            <Available />
-            <Portfolio1 />
-            {/* <Portfolio2 /> */}
-            <Footer />
-          </div>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Header />
+        <div className="slider">
+          <Home />
+          <Profile />
+          <Available />
+          <Portfolio1 />
+          {/* <Portfolio2 /> */}
+          <Footer />
+        </div>
+      </>
+      {/* )} */}
     </>
   );
 }

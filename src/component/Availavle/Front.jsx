@@ -82,7 +82,7 @@ export default function Front() {
               </div>
               <div className="right">
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data1}
                   layout="vertical"
@@ -120,7 +120,7 @@ export default function Front() {
               <div className="right">
                 {/* <Bar data={Data1} options={Options}></Bar> */}
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data1}
                   layout="vertical"
@@ -158,7 +158,7 @@ export default function Front() {
               <div className="right">
                 {/* <Bar data={Data3} options={Options}></Bar> */}
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data2}
                   layout="vertical"
@@ -196,7 +196,7 @@ export default function Front() {
               <div className="right">
                 {/* <Bar data={Data2} options={Options}></Bar> */}
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data1}
                   layout="vertical"
@@ -234,7 +234,7 @@ export default function Front() {
               <div className="right">
                 {/* <Bar data={Data3} options={Options}></Bar> */}
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data3}
                   layout="vertical"
@@ -272,7 +272,7 @@ export default function Front() {
               <div className="right">
                 {/* <Bar data={Data4} options={Options}></Bar> */}
                 <BarChart
-                  width={450}
+                  width={385}
                   height={60}
                   data={data4}
                   layout="vertical"

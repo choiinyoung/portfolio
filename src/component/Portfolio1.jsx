@@ -64,7 +64,7 @@ export default function Portfolio1() {
       clearInterval(intervalId);
     };
 
-    rotateCarousel();
+    // rotateCarousel();
     startInterval();
 
     const carousel = carouselRef.current;

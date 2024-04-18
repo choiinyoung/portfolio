@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Home.scss";
+// import "../style/Home_tablet.scss";
 import { motion } from "framer-motion";
 // import bg from "../img/pre-comp2.mp4";
 import { Link } from "react-scroll";

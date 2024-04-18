@@ -309,3 +309,95 @@ $tool-shadow-color: #4aa52e;
     }
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .available {
+    .all {
+      // border: 1px solid;
+
+      .all_controllor {
+        // border: 1px solid;
+        margin: 7% auto;
+        display: flex;
+        justify-content: space-between;
+        .btn {
+          label {
+            font-size: 1.8vw;
+            cursor: pointer;
+            width: 65%;
+            height: 8vh;
+            line-height: 8vh;
+            &:before,
+            &::after {
+              width: 98%;
+              height: 99%;
+            }
+          }
+        }
+        .window {
+          // border: 1px solid red;
+          .controll {
+            width: 100%;
+            // border: 1px solid blue;
+            .top {
+              ul {
+                // border: 1px solid;
+                height: 37%;
+                top: 35%;
+              }
+            }
+            .content {
+              // border: 1px solid;
+
+              .all {
+                ul {
+                  // border: 1px solid;
+                  display: flex;
+                  flex-direction: column;
+                  /* justify-content: center; */
+                  align-items: center;
+                  li {
+                    width: 90%;
+                    margin-bottom: 5%;
+                    margin-top: 5%;
+                    // border: 1px solid;
+                    .chart {
+                      display: flex;
+                      // border: 1px solid;
+                      padding: 0;
+                      justify-content: space-between;
+                      align-items: center;
+                      .img {
+                        // border: 1px solid;
+                        width: 15%;
+                        height: 90%;
+                        top: 5%;
+                        position: relative;
+                        img {
+                          width: 100%;
+                        }
+                      }
+                      .right {
+                        // border: 1px solid blue;
+                        width: 75%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .arrows {
+        position: absolute;
+        top: 76%;
+        left: 42%;
+        span {
+          width: 43%;
+        }
+      }
+    }
+  }
+}
